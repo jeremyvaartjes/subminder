@@ -1,0 +1,17 @@
+# ninja log v5
+0	389	1541736088	com.github.jeremyvaartjes.subminder@exe/src/Application.c	d4fcc97cbe8d4bbc
+0	460	0	meson-com.github.jeremyvaartjes.subminder-pot	a992f510d1b75c8b
+0	1400	0	meson-com.github.jeremyvaartjes.subminder-update-po	170a9074edba6446
+1	265	1541736142	data/com.github.jeremyvaartjes.subminder.desktop	f637e7528af10f
+1	270	1541736142	data/com.github.jeremyvaartjes.subminder.appdata.xml	2cb98b1a8c205987
+0	384	1541736142	com.github.jeremyvaartjes.subminder@exe/meson-generated_src_Application.c.o	df35c8e1acf6ae03
+386	480	1541736143	com.github.jeremyvaartjes.subminder	587b8a29fb683e01
+3	1485	0	meson-install	e488157a9f71c978
+3	379	1541736456	com.github.jeremyvaartjes.subminder@exe/src/Application.c	d4fcc97cbe8d4bbc
+379	717	1541736457	com.github.jeremyvaartjes.subminder@exe/meson-generated_src_Application.c.o	df35c8e1acf6ae03
+717	812	1541736457	com.github.jeremyvaartjes.subminder	587b8a29fb683e01
+2	1503	0	meson-install	e488157a9f71c978
+3	373	1541736509	com.github.jeremyvaartjes.subminder@exe/src/Application.c	d4fcc97cbe8d4bbc
+374	713	1541736510	com.github.jeremyvaartjes.subminder@exe/meson-generated_src_Application.c.o	df35c8e1acf6ae03
+713	809	1541736510	com.github.jeremyvaartjes.subminder	587b8a29fb683e01
+3	1493	0	meson-install	e488157a9f71c978

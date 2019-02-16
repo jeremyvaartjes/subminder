@@ -1,0 +1,44 @@
+# Setswana translations for com.github.jeremyvaartjes.subminder package.
+# Copyright (C) 2018 THE com.github.jeremyvaartjes.subminder'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.jeremyvaartjes.subminder package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-09 15:02+1100\n"
+"PO-Revision-Date: 2018-11-09 15:02+1100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: tn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:3
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
+msgid "SubMinder"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:4
+msgid "Subscription Manager"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:5
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
+msgid "Keep tabs on your subscriptions"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:8
+msgid "com.github.jeremyvaartjes.subminder"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:11
+msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:52
+msgid "Jeremy Vaartjes"
+msgstr ""

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=SubMinder
+GenericName=Subscription Manager
+Comment=Keep tabs on your subscriptions
+Categories=Utility;Office;Finance;
+Exec=com.github.jeremyvaartjes.subminder
+Icon=com.github.jeremyvaartjes.subminder
+Terminal=false
+Type=Application
+Keywords=Subscription;Manager;Sub;Minder;Money;Reminder;

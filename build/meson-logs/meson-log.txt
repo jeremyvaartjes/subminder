@@ -1,0 +1,38 @@
+Build started at 2018-11-09T15:01:23.394176
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.46.1
+Source dir: /home/jeremy/Documents/subminder
+Build dir: /home/jeremy/Documents/subminder/build
+Build type: native build
+Project name: com.github.jeremyvaartjes.subminder
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/jeremy/Documents/subminder/build/meson-private/sanitycheckc.c -o /home/jeremy/Documents/subminder/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/jeremy/Documents/subminder/build/meson-private/sanitycheckc.exe
+Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
+Running compile:
+Working directory:  /tmp/tmpoxwaj7p5
+Command line:  valac /tmp/tmpoxwaj7p5/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Native Vala compiler: valac (valac 0.40.11)
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency gtk+-3.0 found: YES 3.22.30
+Build targets in project: 6
+Found ninja-1.8.2 at /usr/bin/ninja

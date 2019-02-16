@@ -1,0 +1,25 @@
+[Desktop Entry]
+Name[en_AU]=SubMinder
+Name[en_CA]=SubMinder
+Name[en_GB]=SubMinder
+Name=SubMinder
+GenericName[en_AU]=Subscription Manager
+GenericName[en_CA]=Subscription Manager
+GenericName[en_GB]=Subscription Manager
+GenericName=Subscription Manager
+Comment[en_AU]=Keep tabs on your subscriptions
+Comment[en_CA]=Keep tabs on your subscriptions
+Comment[en_GB]=Keep tabs on your subscriptions
+Comment=Keep tabs on your subscriptions
+Categories=Utility;Office;Finance;
+Exec=com.github.jeremyvaartjes.subminder
+Icon[en_AU]=com.github.jeremyvaartjes.subminder
+Icon[en_CA]=com.github.jeremyvaartjes.subminder
+Icon[en_GB]=com.github.jeremyvaartjes.subminder
+Icon=com.github.jeremyvaartjes.subminder
+Terminal=false
+Type=Application
+Keywords[en_AU]=Subscription;Manager;Sub;Minder;Money;Reminder;
+Keywords[en_CA]=Subscription;Manager;Sub;Minder;Money;Reminder;
+Keywords[en_GB]=Subscription;Manager;Sub;Minder;Money;Reminder;
+Keywords=Subscription;Manager;Sub;Minder;Money;Reminder;
