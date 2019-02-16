@@ -12,7 +12,7 @@ Keep tabs on your subscriptions.
 Developing and Building
 =======================
 
-If you want to hack on and build Comgen yourself, you'll need the following dependencies:
+If you want to hack on and build SubMinder yourself, you'll need the following dependencies:
 
 * libgtk-3-dev
 * meson
