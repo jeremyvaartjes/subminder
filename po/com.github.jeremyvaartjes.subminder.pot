@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-09 15:02+1100\n"
+"POT-Creation-Date: 2019-03-08 09:59+1100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:3
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
+#: src/Application.vala:141
 msgid "SubMinder"
 msgstr ""
 
@@ -42,4 +43,52 @@ msgstr ""
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:52
 msgid "Jeremy Vaartjes"
+msgstr ""
+
+#: src/Application.vala:143
+msgid "<b>Average Expenses</b>"
+msgstr ""
+
+#: src/Application.vala:146
+msgid "<small>Per Month</small>"
+msgstr ""
+
+#: src/Application.vala:149
+msgid "$0.00"
+msgstr ""
+
+#: src/Application.vala:165
+msgid "Subscription List"
+msgstr ""
+
+#: src/Application.vala:263
+msgid "Name:"
+msgstr ""
+
+#: src/Application.vala:264
+msgid "Description:"
+msgstr ""
+
+#: src/Application.vala:265
+msgid "First Billing Date:"
+msgstr ""
+
+#: src/Application.vala:266
+msgid "Billing Cycle:"
+msgstr ""
+
+#: src/Application.vala:267
+msgid "Remind Me:"
+msgstr ""
+
+#: src/Application.vala:268
+msgid "Currency:"
+msgstr ""
+
+#: src/Application.vala:269
+msgid "Cost:"
+msgstr ""
+
+#: src/Application.vala:499
+msgid "Delete subscription"
 msgstr ""

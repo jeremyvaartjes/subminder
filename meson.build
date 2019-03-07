@@ -8,8 +8,15 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 executable(
     meson.project_name(),
     'src/Application.vala',
+    'src/Subscription.vala',
+    'src/SubscriptionListRow.vala',
+    'src/SMCurrency.vala',
     dependencies: [
-        dependency('gtk+-3.0')
+        dependency('gtk+-3.0'),
+        dependency('gee-0.8'),
+        dependency('json-glib-1.0'),
+        dependency('granite'),
+        dependency('libsoup-2.4')
     ],
     install: true
 )
