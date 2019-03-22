@@ -24,7 +24,7 @@ public class SMCurrency {
             var curTime = new DateTime.now_utc();
             var timeSince = curTime.difference(genTime);
             if(timeSince > 6.5 * TimeSpan.HOUR){
-                stdout.printf("Downloading updated currency data...\n");
+                stdout.printf(_("Downloading updated currency data...\n"));
                 ThreadFunc<bool> run = () => {
                     download();
                     try{

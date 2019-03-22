@@ -11,6 +11,9 @@ executable(
     'src/Subscription.vala',
     'src/SubscriptionListRow.vala',
     'src/SMCurrency.vala',
+    'src/AddSubscriptionDialog.vala',
+    'src/Settings.vala',
+    'src/DefaultCurrencyDialog.vala',
     dependencies: [
         dependency('gtk+-3.0'),
         dependency('gee-0.8'),
@@ -24,3 +27,4 @@ executable(
 subdir('data')
 subdir('po')
 
+meson.add_install_script('meson/post_install.py')

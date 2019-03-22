@@ -1,5 +1,6 @@
-![SubMinder Icon](https://raw.githubusercontent.com/jeremyvaartjes/subminder/master/subminder.png)
+[![Build Status](https://travis-ci.com/jeremyvaartjes/subminder.svg?branch=master)](https://travis-ci.com/jeremyvaartjes/comgen)
 
+![SubMinder Icon](https://raw.githubusercontent.com/jeremyvaartjes/subminder/master/subminder.png)
 SubMinder
 =========
 
@@ -17,6 +18,10 @@ If you want to hack on and build SubMinder yourself, you'll need the following d
 * libgtk-3-dev
 * meson
 * valac
+* libsoup2.4-dev
+* libjson-glib-dev
+* libgranite-dev
+* libgee-0.8-dev
 
 Run `meson build` to configure the build environment and run `ninja test` to build and run automated tests
 

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=SubMinder Daemon
+Comment=Subscription Manager Notifications
+Icon=com.github.jeremyvaartjes.subminder
+Exec=com.github.jeremyvaartjes.subminder -s
+Terminal=false
+Type=Application
+NoDisplay=true
+X-GNOME-AutoRestart=true
+X-GNOME-Autostart-Delay=10
+X-GNOME-Autostart-Phase=Applications

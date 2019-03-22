@@ -12,59 +12,46 @@ public struct Interval {
 
 public class Subscription {
     private int _fileId;
-    private DateTime _nextBillDate;
-    private DateTime _previousBillDate;
+    private DateTime _firstBillDate;
     private Interval _cycle;
 
     public string name;
     public string description;
-    public DateTime firstBillDate;
-    public DateTime nextBillDate { get{ return _nextBillDate; } }
+    public DateTime firstBillDate {
+        get{
+            return _firstBillDate;
+        }
+        set{
+            _firstBillDate = value;
+            updateNextDates();
+        }
+    }
+    public DateTime nextBillDate;
     public Interval cycle{
         get{
             return _cycle;
         }
         set {
             _cycle = value;
-            switch (_cycle.type) {
+            updateNextDates();
+            /*switch (_cycle.type) {
                 case DAY:
-                    _nextBillDate = _previousBillDate.add_days(_cycle.qty);
+                    nextBillDate = _previousBillDate.add_days(_cycle.qty);
                     break;
                 case WEEK:
-                    _nextBillDate = _previousBillDate.add_weeks(_cycle.qty);
+                    nextBillDate = _previousBillDate.add_weeks(_cycle.qty);
                     break;
                 case MONTH:
-                    _nextBillDate = _previousBillDate.add_months(_cycle.qty);
+                    nextBillDate = _previousBillDate.add_months(_cycle.qty);
                     break;
                 case YEAR:
-                    _nextBillDate = _previousBillDate.add_years(_cycle.qty);
+                    nextBillDate = _previousBillDate.add_years(_cycle.qty);
                     break;
-            }
-        }
-    }
-    public DateTime previousBillDate{
-        get{
-            return _previousBillDate;
-        }
-        set {
-            _previousBillDate = value;
-            switch (_cycle.type) {
-                case DAY:
-                    _nextBillDate = value.add_days(_cycle.qty);
-                    break;
-                case WEEK:
-                    _nextBillDate = value.add_weeks(_cycle.qty);
-                    break;
-                case MONTH:
-                    _nextBillDate = value.add_months(_cycle.qty);
-                    break;
-                case YEAR:
-                    _nextBillDate = value.add_years(_cycle.qty);
-                    break;
-            }
+            }*/
         }
     }
     
+    public DateTime nextNotification;
     public Interval remindMe;
     public string currency;
     public int amount;
@@ -75,11 +62,11 @@ public class Subscription {
         subDir = Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.subminder";
         name = "";
         description = "";
-        firstBillDate = new DateTime.now_local ();
-        _nextBillDate = new DateTime.now_local ();
-        previousBillDate = new DateTime.now_local ();
-        cycle = { 1, IntervalType.DAY };
+        nextBillDate = new DateTime.now_local ();
+        nextNotification = new DateTime.now_local ();
+        _cycle = { 1, IntervalType.MONTH };
         remindMe = { 0, IntervalType.DAY };
+        _firstBillDate = new DateTime.now_local ();
         currency = "";
         amount = 0;
     }
@@ -99,15 +86,6 @@ public class Subscription {
         builder.add_int_value (firstBillDate.get_month());
         builder.set_member_name ("day");
         builder.add_int_value (firstBillDate.get_day_of_month());
-        builder.end_object ();
-        builder.set_member_name ("previousBillDate");
-        builder.begin_object ();
-        builder.set_member_name ("year");
-        builder.add_int_value (previousBillDate.get_year());
-        builder.set_member_name ("month");
-        builder.add_int_value (previousBillDate.get_month());
-        builder.set_member_name ("day");
-        builder.add_int_value (previousBillDate.get_day_of_month());
         builder.end_object ();
         builder.set_member_name ("cycle");
         builder.begin_object ();
@@ -200,11 +178,7 @@ public class Subscription {
             Json.Object obj = node.get_object ();
             name = obj.get_string_member ("name");
             description = obj.get_string_member ("description");
-            Json.Object tmpObj = obj.get_object_member ("firstBillDate");
-            firstBillDate = new DateTime.local((int)tmpObj.get_int_member("year"), (int)tmpObj.get_int_member("month"), (int)tmpObj.get_int_member("day"), 0, 0, 0);
-            tmpObj = obj.get_object_member ("previousBillDate");
-            previousBillDate = new DateTime.local((int)tmpObj.get_int_member("year"), (int)tmpObj.get_int_member("month"), (int)tmpObj.get_int_member("day"), 0, 0, 0);
-            tmpObj = obj.get_object_member ("cycle");
+            Json.Object tmpObj = obj.get_object_member ("cycle");
             Interval tCycle = { 0, DAY };
             tCycle.qty = (int)tmpObj.get_int_member ("qty");
             var cycleType = tmpObj.get_string_member ("type");
@@ -224,7 +198,7 @@ public class Subscription {
                 default:
                     throw new IOError.INVALID_DATA("Invalid interval type");
             }
-            cycle = tCycle;
+            _cycle = tCycle;
             tmpObj = obj.get_object_member ("remindMe");
             remindMe.qty = (int)tmpObj.get_int_member ("qty");
             var remindMeType = tmpObj.get_string_member ("type");
@@ -244,6 +218,8 @@ public class Subscription {
                 default:
                     throw new IOError.INVALID_DATA("Invalid interval type");
             }
+            tmpObj = obj.get_object_member ("firstBillDate");
+            firstBillDate = new DateTime.local((int)tmpObj.get_int_member("year"), (int)tmpObj.get_int_member("month"), (int)tmpObj.get_int_member("day"), 0, 0, 0);
             currency = obj.get_string_member ("currency");
             amount = (int)obj.get_int_member ("amount");
         }
@@ -290,193 +266,78 @@ public class Subscription {
         return true;
     }
 
-    /*private string _name;
-    private int _id;
-    private string _url;
-    private string _output;
-    private string _requestType;
-    private string _data;
-    private string _contentType;
-    private uint _testStatus;
-    private bool _inProgress;
-    private double _loadTime;
-    private Gee.TreeMap<string,string> _headers;
-
-    public string name {
-        get { return _name; }
-        set {
-            var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + _id.to_string());
-            if (file.query_exists ()){
-                _name = value;
-                this.outputToFile();
-            }
-        }
-    }
-
-    public string url {
-        get { return _url; }
-        set {
-            var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + _id.to_string());
-            if (file.query_exists ()){
-                _url = value;
-                this.outputToFile();
-            }
-        }
-    }
-
-    public string requestType {
-        get { return _requestType; }
-        set {
-            var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + _id.to_string());
-            if (file.query_exists ()){
-                _requestType = value;
-                this.outputToFile();
-            }
-        }
-    }
-
-    public string data {
-        get { return _data; }
-        set {
-            var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + _id.to_string());
-            if (file.query_exists ()){
-                _data = value;
-                this.outputToFile();
-            }
-        }
-    }
-
-    public string contentType {
-        get { return _contentType; }
-        set {
-            var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + _id.to_string());
-            if (file.query_exists ()){
-                _contentType = value;
-                this.outputToFile();
-            }
-        }
-    }
-
-    public int id { get { return _id; } }
-    public string output { get { return _output; } set { _output = value; } }
-    public uint testStatus { get { return _testStatus; } set { _testStatus = value; } }
-    public bool inProgress { get { return _inProgress; } set { _inProgress = value; } }
-    public double loadTime { get { return _loadTime; } set { _loadTime = value; } }
-    public Gee.TreeMap<string,string> headers { get { return _headers; } set { _headers = value; } }
-
-    public PingTest () throws Error{
-        var counter = 1;
-        var done = false;
-        while(!done){
-            var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + counter.to_string());
-            if (!file.query_exists ()){
-                var dir = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests");
-                if (!dir.query_exists ()){
-                    dir.make_directory_with_parents ();
-                }
-
-                file.create(FileCreateFlags.NONE);
-
-                _id = counter;
-                _name = _("New API Test");
-                _url = "";
-                _output = "";
-                _testStatus = 0;
-                _requestType = "GET";
-                _data = "";
-                _contentType = "application/json";
-                _inProgress = false;
-                _loadTime = 0;
-                this.outputToFile();
-                done = true;
-            } else {
-                counter++;
-            }
-        }
-    }
-
-    public PingTest.load(int id) throws IOError {
-        var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + id.to_string());
-        if (!file.query_exists ()){
-            throw new IOError.NOT_FOUND(_("Cannot load file: ") + id.to_string());
-        } else {
-            _id = id;
-            Json.Parser parser = new Json.Parser ();
-            parser.load_from_file (Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + id.to_string());
-            Json.Node node = parser.get_root ();
-            Json.Object obj = node.get_object ();
-            _name = obj.get_string_member ("name");
-            _url = obj.get_string_member ("url");
-            _requestType = obj.get_string_member ("requestType");
-            _data = obj.get_string_member ("data");
-            _contentType = obj.get_string_member ("contentType");
-            _output = "";
-            _testStatus = 0;
-            _inProgress = false;
-            _loadTime = 0;
-        }
-    }
-
-    public bool remove() {
-        var dir = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests");
-        if (!dir.query_exists ()){
-            return false;
-        }else{
-            var file = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + _id.to_string());
-            if (!file.query_exists ()){
-                return false;
-            }else{
-                try{
-                    file.delete();
-                } catch (Error e) {
-                    print ("Error: %s\n", e.message);
-                    return false;
+    private void updateNextDates(){
+        if(_cycle.qty != 0){
+            nextBillDate = _firstBillDate;
+            var done = false;
+            while(!done){
+                switch (_cycle.type) {
+                    case DAY:
+                        nextBillDate = nextBillDate.add_days(_cycle.qty);
+                        if(nextBillDate.difference(today()) >= 0){
+                            done = true;
+                        }
+                        break;
+                    case WEEK:
+                        nextBillDate = nextBillDate.add_weeks(_cycle.qty);
+                        if(nextBillDate.difference(today()) >= 0){
+                            done = true;
+                        }
+                        break;
+                    case MONTH:
+                        nextBillDate = nextBillDate.add_months(_cycle.qty);
+                        if(nextBillDate.difference(today()) >= 0){
+                            done = true;
+                        }
+                        break;
+                    case YEAR:
+                        nextBillDate = nextBillDate.add_years(_cycle.qty);
+                        if(nextBillDate.difference(today()) >= 0){
+                            done = true;
+                        }
+                        break;
                 }
             }
-        }
-        return true;
-    }
 
-    public static Gee.ArrayList<int> getListOfTests(){
-        var list = new Gee.ArrayList<int>();
-        try {
-            string directory = Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests";
-            Dir dir = Dir.open (directory, 0);
-            string? name = null;
+            switch (remindMe.type) {
+                case DAY:
+                    nextNotification = nextBillDate.add_days(-remindMe.qty);
+                    break;
+                case WEEK:
+                    nextNotification = nextBillDate.add_weeks(-remindMe.qty);
+                    break;
+                case MONTH:
+                    nextNotification = nextBillDate.add_months(-remindMe.qty);
+                    break;
+                case YEAR:
+                    nextNotification = nextBillDate.add_years(-remindMe.qty);
+                    break;
+            }
 
-            while ((name = dir.read_name ()) != null) {
-                string path = Path.build_filename (directory, name);
-
-                if (FileUtils.test (path, FileTest.IS_REGULAR)) {
-                    list.add(int.parse(name));
+            if(nextNotification.difference(today()) < 0){
+                switch (_cycle.type) {
+                    case DAY:
+                        nextNotification = nextNotification.add_days(_cycle.qty);
+                        break;
+                    case WEEK:
+                        nextNotification = nextNotification.add_weeks(_cycle.qty);
+                        break;
+                    case MONTH:
+                        nextNotification = nextNotification.add_months(_cycle.qty);
+                        break;
+                    case YEAR:
+                        nextNotification = nextNotification.add_years(_cycle.qty);
+                        break;
                 }
             }
-        } catch (FileError err) {
-            stderr.printf (err.message);
+
+            //stdout.printf("%s: %s -> %s(%s)\n", name, _firstBillDate.to_string(), nextBillDate.to_string(), nextNotification.to_string());
         }
-
-        return list;
     }
+}
 
-    private void outputToFile() throws Error{
-        Json.Builder builder = new Json.Builder ();
-
-        builder.begin_object ();
-        builder.set_member_name ("name");
-        builder.add_string_value (_name);
-        builder.set_member_name ("url");
-        builder.add_string_value (_url);
-        builder.set_member_name ("requestType");
-        builder.add_string_value (_requestType);
-        builder.set_member_name ("data");
-        builder.add_string_value (_data);
-        builder.set_member_name ("contentType");
-        builder.add_string_value (_contentType);
-        builder.end_object ();
-
-        Json.Generator generator = new Json.Generator ();
-        Json.Node root = builder.get_root ();
-        generator.set_root (root);
-        generator.to_file(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.ping/tests/" + _id.to_string());
-    }*/
+public DateTime today(){
+    var now = new DateTime.now_local();
+    var dayOnly = new DateTime.local(now.get_year(), now.get_month(), now.get_day_of_month(), 0, 0, 0);
+    return dayOnly;
 }

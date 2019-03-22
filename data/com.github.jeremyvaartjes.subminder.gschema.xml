@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/com/github/jeremyvaartjes/subminder/settings/" id="com.github.jeremyvaartjes.subminder.settings" gettext-domain="com.github.jeremyvaartjes.subminder">
+    <key name="default-currency" type="s">
+      <default>'UNSET'</default>
+      <summary>Default Currency</summary>
+      <description>This is your default currency.</description>
+    </key>
+  </schema>
+</schemalist>

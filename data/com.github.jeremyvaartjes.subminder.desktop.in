@@ -8,3 +8,4 @@ Icon=com.github.jeremyvaartjes.subminder
 Terminal=false
 Type=Application
 Keywords=Subscription;Manager;Sub;Minder;Money;Reminder;
+X-GNOME-UsesNotifications=true
