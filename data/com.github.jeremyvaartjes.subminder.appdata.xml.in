@@ -22,6 +22,16 @@
     </screenshot>
   </screenshots>
 
+  <releases>
+    <release version="1.0" date="2019-03-31">
+      <description>
+        <ul>
+          <li>Initial Release.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
