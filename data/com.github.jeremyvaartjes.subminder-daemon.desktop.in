@@ -2,7 +2,7 @@
 Name=SubMinder Daemon
 Comment=Subscription Manager Notifications
 Icon=com.github.jeremyvaartjes.subminder
-Exec=com.github.jeremyvaartjes.subminder -s
+Exec=com.github.jeremyvaartjes.subminder-daemon
 Terminal=false
 Type=Application
 NoDisplay=true

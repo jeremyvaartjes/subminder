@@ -1,13 +1,21 @@
 public class SubMinder : Gtk.Application {
 
     public const OptionEntry[] SUBMINDER_OPTIONS =  {
-        { "silent", 's', 0, OptionArg.NONE, out silent,
-        "Run the Application in background", null},
+        { "notif", 'n', 0, OptionArg.NONE, out notif,
+        "Just show a notification", null},
+        { "notifId", 'i', 0, OptionArg.INT, out notifId,
+        "Notification ID Number", "id"},
+        { "notifTitle", 't', 0, OptionArg.STRING, out notifTitle,
+        "Notification Title Text", "\"Title Text\""},
+        { "notifBody", 'b', 0, OptionArg.STRING, out notifBody,
+        "Notification Body Text", "\"Body Text\""},
         { null }
     };
 
-    public static bool silent;
-    Gee.TreeMap<int, DateTime> notificationHistory;
+    public static bool notif;
+    public static int notifId;
+    public static string notifTitle;
+    public static string notifBody;
 
     Gee.TreeMap<int, Subscription> subs;
     Gtk.ApplicationWindow mainWindow;
@@ -40,14 +48,7 @@ public class SubMinder : Gtk.Application {
             flags: ApplicationFlags.FLAGS_NONE
         );
 
-        add_main_option_entries (SUBMINDER_OPTIONS);
-        var quit_action = new SimpleAction ("quit", null);
-        quit_action.activate.connect (() => {
-            if (mainWindow != null) {
-                mainWindow.destroy ();
-            }
-        });
-        add_action (quit_action);
+        //add_main_option_entries (SUBMINDER_OPTIONS);
 
         try{
             currency = new SMCurrency();
@@ -188,18 +189,10 @@ public class SubMinder : Gtk.Application {
     }
 
     protected override void activate () {
-        if(silent){
-            silent = false;
-            notificationHistory = new Gee.TreeMap<int, DateTime>();
-
-            checkNotifications();
-            // check notifications every 3 hours
-            Timeout.add_seconds (10800, () => {
-                checkNotifications();
-                return true;
-            });
-            Gtk.main ();
-        }else{
+        if(notif){
+            doNotif(notifId, notifTitle, notifBody);
+            notif = false;
+        }else if(mainWindow == null){
             mainWindow = new Gtk.ApplicationWindow (this);
             mainWindow.default_height = 600;
             mainWindow.default_width = 450;
@@ -446,7 +439,7 @@ public class SubMinder : Gtk.Application {
                     }
                 }
             });
-            subDetailsAmount = new Gtk.SpinButton.with_range(0, 10000000, 1);
+            subDetailsAmount = new Gtk.SpinButton.with_range(0, 10000000, 0.01);
             subDetailsAmount.digits = 2;
             subDetailsAmount.changed.connect(() => {
                 if(selectedRowId != 0){
@@ -622,65 +615,35 @@ public class SubMinder : Gtk.Application {
         }
     }
 
-    private void checkNotifications(){
-        int yearNow, monthNow, dayNow;
-        var curTime = new DateTime.now_local();
-        curTime.get_ymd(out yearNow, out monthNow, out dayNow);
-
-        var subs = new Gee.TreeMap<int, Subscription>();
-        Gee.ArrayList<int> existingSubs = Subscription.getFileList();
-        foreach (var entry in existingSubs) {
-            if(!notificationHistory.has_key(entry)){
-                try{
-                    Subscription sub = new Subscription();
-                    sub.read(entry);
-                    subs[sub.fileId] = sub;
-                }catch(IOError e){
-                    stdout.printf("Error: %s\n", e.message);
-                }catch(Error e){
-                    stdout.printf("Error: %s\n", e.message);
-                }
-            }else{
-                int yearNot, monthNot, dayNot;
-                notificationHistory[entry].get_ymd(out yearNot, out monthNot, out dayNot);
-                if(yearNot != yearNow || monthNot != monthNow || dayNot != dayNow){
-                    try{
-                        Subscription sub = new Subscription();
-                        sub.read(entry);
-                        subs[sub.fileId] = sub;
-                    }catch(IOError e){
-                        stdout.printf("Error: %s\n", e.message);
-                    }catch(Error e){
-                        stdout.printf("Error: %s\n", e.message);
-                    }
-                }
-            }
-        }
-
-        foreach (var entry in subs.entries) {
-            int yearNot, monthNot, dayNot, yearBill, monthBill, dayBill;
-            entry.value.nextNotification.get_ymd(out yearNot, out monthNot, out dayNot);
-            entry.value.nextBillDate.get_ymd(out yearBill, out monthBill, out dayBill);
-            if(yearNot == yearNow && monthNot == monthNow && dayNot == dayNow){
-                notificationHistory[entry.key] = curTime;
-                var notification = new GLib.Notification (entry.value.name);
-                if(yearNot == yearBill && monthNot == monthBill && dayNot == dayBill){
-                    notification.set_body (_("Next payment Today"));
-                }else{
-                    notification.set_body (_("Next payment on ") + entry.value.nextBillDate.format(Granite.DateTime.get_default_date_format(true, true, true)));
-                }
-                string uid = "com.github.jeremyvaartjes.subminder-"+entry.key.to_string();
-                GLib.Application.get_default ().send_notification (uid, notification);
-            }
-        }
+    public void doNotif(int id, string title, string body){
+        var notification = new GLib.Notification (title);
+        notification.set_body (body);
+        string uid = "com.github.jeremyvaartjes.subminder-"+id.to_string();
+        this.send_notification (uid, notification);
     }
 
     public static int main (string[] args) {
-        if (!Thread.supported ()) {
-            stderr.printf (_("Cannot run without thread support.\n"));
-            return 1;
+        OptionContext context = new OptionContext ("");
+        context.add_main_entries (SUBMINDER_OPTIONS, null);
+
+        try {
+            context.parse (ref args);
+        } catch (OptionError e) {
+            error (e.message);
         }
+
         var app = new SubMinder ();
-        return app.run (args);
+
+        if (notif) {
+            app.register();
+            app.doNotif(notifId, notifTitle, notifBody);
+            return 0;
+        }else{
+            if (!Thread.supported ()) {
+                stderr.printf (_("Cannot run without thread support.\n"));
+                return 1;
+            }
+            return app.run (args);
+        }
     }
 }

@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/jeremyvaartjes/subminder.svg?branch=master)](https://travis-ci.com/jeremyvaartjes/comgen)
+[![Build Status](https://travis-ci.com/jeremyvaartjes/subminder.svg?branch=master)](https://travis-ci.com/jeremyvaartjes/subminder)
 
 ![SubMinder Icon](https://raw.githubusercontent.com/jeremyvaartjes/subminder/master/subminder.png)
 SubMinder

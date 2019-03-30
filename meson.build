@@ -24,6 +24,19 @@ executable(
     install: true
 )
 
+executable(
+    meson.project_name()+'-daemon',
+    'src/Daemon.vala',
+    'src/Subscription.vala',
+    dependencies: [
+        dependency('gtk+-3.0'),
+        dependency('gee-0.8'),
+        dependency('json-glib-1.0'),
+        dependency('granite')
+    ],
+    install: true
+)
+
 subdir('data')
 subdir('po')
 
