@@ -17,6 +17,9 @@
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/jeremyvaartjes/subminder/master/data/screenshot.png</image>
     </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/jeremyvaartjes/subminder/master/data/screenshot-2.png</image>
+    </screenshot>
   </screenshots>
 
   <content_rating type="oars-1.1">
@@ -55,9 +58,9 @@
   <url type="translate">https://github.com/jeremyvaartjes/subminder/tree/master/po#readme</url>
 
   <custom>
-    <value key="x-appcenter-color-primary">#1c2a3d</value>
-    <value key="x-appcenter-color-primary-text">#6be3c3</value>
-    <value key="x-appcenter-suggested-price">3</value>
+    <value key="x-appcenter-color-primary">#64728a</value>
+    <value key="x-appcenter-color-primary-text">#ffffff</value>
+    <value key="x-appcenter-suggested-price">5</value>
   </custom>
 
 </component>
