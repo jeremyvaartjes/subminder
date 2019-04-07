@@ -1,3 +1,10 @@
+com.github.jeremyvaartjes.subminder (1.0.1) bionic; urgency=medium
+
+  * Fixed issue with spin buttons not updating properly.
+  * Created a proper app description.
+
+ -- Jeremy Vaartjes <jeremy@vaartj.es>  Sun, 7 Apr 2019 13:33:12 +1000
+
 com.github.jeremyvaartjes.subminder (1.0) bionic; urgency=medium
 
   * Initial Release.

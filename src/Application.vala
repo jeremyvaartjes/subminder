@@ -4,7 +4,7 @@
 //  |__   | | | . | | | | |   | . | -_|  _|
 //  |_____|___|___|_|_|_|_|_|_|___|___|_|  
 //                                         
-//                            Version 1.0.0
+//                            Version 1.0.1
 //  
 //        Jeremy Vaartjes<jeremy@vaartj.es>
 //  
@@ -368,7 +368,7 @@ public class SubMinder : Gtk.Application {
                 }
             });
             subDetailsCycleQty = new Gtk.SpinButton.with_range(1, 10000000, 1);
-            subDetailsCycleQty.changed.connect(() => {
+            subDetailsCycleQty.value_changed.connect(() => {
                 if(selectedRowId != 0){
                     Interval newInt = { (int)subDetailsCycleQty.value, subs[selectedRowId].cycle.type };
                     subs[selectedRowId].cycle = newInt;
@@ -408,7 +408,7 @@ public class SubMinder : Gtk.Application {
                 }
             });
             subDetailsRemindMeQty = new Gtk.SpinButton.with_range(1, 10000000, 1);
-            subDetailsRemindMeQty.changed.connect(() => {
+            subDetailsRemindMeQty.value_changed.connect(() => {
                 if(selectedRowId != 0){
                     Interval newInt = { (int)subDetailsRemindMeQty.value, subs[selectedRowId].remindMe.type };
                     subs[selectedRowId].remindMe = newInt;
@@ -475,8 +475,9 @@ public class SubMinder : Gtk.Application {
             });
             subDetailsAmount = new Gtk.SpinButton.with_range(0, 10000000, 0.01);
             subDetailsAmount.digits = 2;
-            subDetailsAmount.changed.connect(() => {
+            subDetailsAmount.value_changed.connect(() => {
                 if(selectedRowId != 0){
+                    stdout.printf("%d\n", (int)(subDetailsAmount.value * 100));
                     subs[selectedRowId].amount = (int)(subDetailsAmount.value * 100);
                     try{
                         subs[selectedRowId].write();
