@@ -156,7 +156,7 @@ msgid "Cannot load currency data"
 msgstr ""
 
 #: src/SMCurrency.vala:57
-msgid "Downloading updated currency data...\n"
+msgid "Downloading updated currency data…\n"
 msgstr ""
 
 #: src/Subscription.vala:202

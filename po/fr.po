@@ -154,8 +154,8 @@ msgid "Cannot load currency data"
 msgstr "Impossible de charger les données des devises"
 
 #: src/SMCurrency.vala:57
-msgid "Downloading updated currency data...\n"
-msgstr "Téléchargement des données de devises mises à jour...\n"
+msgid "Downloading updated currency data…\n"
+msgstr "Téléchargement des données de devises mises à jour…\n"
 
 #: src/Subscription.vala:202
 msgid "Cannot load file: "
