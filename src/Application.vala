@@ -232,10 +232,10 @@ public class SubMinder : Gtk.Application {
             mainWindow.default_width = 450;
             mainWindow.title = _("SubMinder");
 
-            var aCGTitle = new Gtk.Label(_("<b>Average Expenses</b>"));
+            var aCGTitle = new Gtk.Label("<b>" + _("Average Expenses") + "</b>");
             aCGTitle.use_markup = true;
             aCGTitle.xalign = 0;
-            var aCGPeriod = new Gtk.Label(_("<small>Per Month</small>"));
+            var aCGPeriod = new Gtk.Label("<small>" + _("Per Month") + "</small>");
             aCGPeriod.use_markup = true;
             aCGPeriod.xalign = 0;
             aCGCost = new Gtk.Label("$0.00");

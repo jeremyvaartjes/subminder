@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-10 12:13+0200\n"
+"POT-Creation-Date: 2019-04-10 17:32+0200\n"
 "PO-Revision-Date: 2018-11-09 15:02+1100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -34,11 +34,11 @@ msgid "SubMinder"
 msgstr ""
 
 #: src/Application.vala:235
-msgid "<b>Average Expenses</b>"
+msgid "Average Expenses"
 msgstr ""
 
 #: src/Application.vala:238
-msgid "<small>Per Month</small>"
+msgid "Per Month"
 msgstr ""
 
 #: src/Application.vala:256

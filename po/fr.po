@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-10 12:13+0200\n"
+"POT-Creation-Date: 2019-04-10 17:32+0200\n"
 "PO-Revision-Date: 2018-11-09 15:02+1100\n"
 "Last-Translator: NathanBnm\n"
 "Language-Team: none\n"
@@ -34,12 +34,12 @@ msgid "SubMinder"
 msgstr "SubMinder"
 
 #: src/Application.vala:235
-msgid "<b>Average Expenses</b>"
-msgstr "<b>Dépenses moyennes</b>"
+msgid "Average Expenses"
+msgstr "Dépenses moyennes"
 
 #: src/Application.vala:238
-msgid "<small>Per Month</small>"
-msgstr "<small>Par mois</small>"
+msgid "Per Month"
+msgstr "Par mois"
 
 #: src/Application.vala:256
 msgid "Subscription List"
@@ -138,8 +138,8 @@ msgid ""
 "Got a suggestion? <a href=\"https://github.com/jeremyvaartjes/subminder/"
 "issues\">Post it here</a>."
 msgstr ""
-"Une suggestion ? <a href=\"https://github.com/jeremyvaartjes/subminder/"
-"issues\">Publiez-la ici</a>."
+"Une suggestion ? <a href=\"https://github.com/jeremyvaartjes/subminder/issues"
+"\">Publiez-la ici</a>."
 
 #: src/DefaultCurrencyDialog.vala:46
 msgid "Set Currency"
