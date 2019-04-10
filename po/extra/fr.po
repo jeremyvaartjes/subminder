@@ -20,24 +20,24 @@ msgstr ""
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:3
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
 msgid "SubMinder"
-msgstr ""
+msgstr "SubMinder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:4
 msgid "Subscription Manager"
-msgstr ""
+msgstr "Gestionnaire d'abonnements"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:5
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
 msgid "Keep tabs on your subscriptions"
-msgstr ""
+msgstr "Gardez un œil sur vos abonnements"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:8
 msgid "com.github.jeremyvaartjes.subminder"
-msgstr ""
+msgstr "com.github.jeremyvaartjes.subminder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:11
 msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
-msgstr ""
+msgstr "Abonnement;Gestionnaire;Sub;Minder;Monnaie;Rappel;"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
 msgid ""
@@ -46,6 +46,9 @@ msgid ""
 "notification with what subscription payment is coming up and how much it "
 "will cost."
 msgstr ""
+"SubMinder peut vous aider à suivre les échéances de vos abonnements. Vous pouvez créer "
+"une liste de vos abonnements et quand un paiement est à venir, vous pouvez obtenir une "
+"notification avec le nom de l'abonnement à venir et combien il coûtera.""
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
 msgid ""
@@ -55,19 +58,24 @@ msgid ""
 "will be converted to your currency so that you can have a better picture of "
 "what you pay."
 msgstr ""
+"SubMinder vous indique également combien vous payez en moyenne par mois. "
+"Cela peut vous aider à mieux gérer les abonnements que vous devez continuer "
+"à payer pour gérer votre budget. Les abonnements dans une devise différente de la vôtre "
+"seront convertis dans votre devise afin que vous puissiez avoir une meilleure idée de "
+"ce que vous payez."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
 msgid "Fixed issue with spin buttons not updating properly."
-msgstr ""
+msgstr "Correction d'un problème avec l'icône de chargement qui ne s'actualisait pas correctement."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
 msgid "Created a proper app description."
-msgstr ""
+msgstr "Création d'une description appropriée pour l'application."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:38
 msgid "Initial Release."
-msgstr ""
+msgstr "Version initiale."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:74
 msgid "Jeremy Vaartjes"
-msgstr ""
+msgstr "Jeremy Vaartjes"
