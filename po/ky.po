@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-31 01:22+1100\n"
+"POT-Creation-Date: 2019-04-07 13:34+1000\n"
 "PO-Revision-Date: 2018-11-09 15:02+1100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -28,7 +28,6 @@ msgstr ""
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:5
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
 msgid "Keep tabs on your subscriptions"
 msgstr ""
 
@@ -40,7 +39,36 @@ msgstr ""
 msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
 msgstr ""
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:55
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
+msgid ""
+"SubMinder can help you track what subscriptions are due when. You can create "
+"a list of your subscriptions and when a payment is upcoming you can get a "
+"notification with what subscription payment is coming up and how much it "
+"will cost."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
+msgid ""
+"SubMinder also provides you with how much you are paying on average per "
+"month. This can help you better manage what subscriptions you should keep "
+"paying to manage your budget. Subscriptions in a currency different to yours "
+"will be converted to your currency so that you can have a better picture of "
+"what you pay."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
+msgid "Fixed issue with spin buttons not updating properly."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
+msgid "Created a proper app description."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:38
+msgid "Initial Release."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:74
 msgid "Jeremy Vaartjes"
 msgstr ""
 
@@ -100,35 +128,35 @@ msgstr ""
 msgid "Cost:"
 msgstr ""
 
-#: src/Application.vala:512 src/Application.vala:528
+#: src/Application.vala:513 src/Application.vala:529
 msgid "Days"
 msgstr ""
 
-#: src/Application.vala:514 src/Application.vala:530
+#: src/Application.vala:515 src/Application.vala:531
 msgid "Weeks"
 msgstr ""
 
-#: src/Application.vala:516 src/Application.vala:532
+#: src/Application.vala:517 src/Application.vala:533
 msgid "Months"
 msgstr ""
 
-#: src/Application.vala:518 src/Application.vala:534
+#: src/Application.vala:519 src/Application.vala:535
 msgid "Years"
 msgstr ""
 
-#: src/Application.vala:524
+#: src/Application.vala:525
 msgid "Never"
 msgstr ""
 
-#: src/Application.vala:526
+#: src/Application.vala:527
 msgid "Same Day"
 msgstr ""
 
-#: src/Application.vala:548
+#: src/Application.vala:549
 msgid "Delete subscription"
 msgstr ""
 
-#: src/Application.vala:677
+#: src/Application.vala:678
 msgid "Cannot run without thread support.\n"
 msgstr ""
 
