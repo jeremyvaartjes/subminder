@@ -1,0 +1,72 @@
+# Igbo translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-10 12:13+0200\n"
+"PO-Revision-Date: 2019-04-10 12:13+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ig\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:3
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
+msgid "SubMinder"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:4
+msgid "Subscription Manager"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:5
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
+msgid "Keep tabs on your subscriptions"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:8
+msgid "com.github.jeremyvaartjes.subminder"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.desktop.in:11
+msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
+msgid ""
+"SubMinder can help you track what subscriptions are due when. You can create "
+"a list of your subscriptions and when a payment is upcoming you can get a "
+"notification with what subscription payment is coming up and how much it "
+"will cost."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
+msgid ""
+"SubMinder also provides you with how much you are paying on average per "
+"month. This can help you better manage what subscriptions you should keep "
+"paying to manage your budget. Subscriptions in a currency different to yours "
+"will be converted to your currency so that you can have a better picture of "
+"what you pay."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
+msgid "Fixed issue with spin buttons not updating properly."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
+msgid "Created a proper app description."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:38
+msgid "Initial Release."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:74
+msgid "Jeremy Vaartjes"
+msgstr ""

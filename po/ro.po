@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-07 13:34+1000\n"
+"POT-Creation-Date: 2019-04-10 12:13+0200\n"
 "PO-Revision-Date: 2018-11-09 15:02+1100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,62 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:3
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
-#: src/Application.vala:233
-msgid "SubMinder"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:4
-msgid "Subscription Manager"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:5
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
-msgid "Keep tabs on your subscriptions"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:8
-msgid "com.github.jeremyvaartjes.subminder"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:11
-msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
-msgid ""
-"SubMinder can help you track what subscriptions are due when. You can create "
-"a list of your subscriptions and when a payment is upcoming you can get a "
-"notification with what subscription payment is coming up and how much it "
-"will cost."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
-msgid ""
-"SubMinder also provides you with how much you are paying on average per "
-"month. This can help you better manage what subscriptions you should keep "
-"paying to manage your budget. Subscriptions in a currency different to yours "
-"will be converted to your currency so that you can have a better picture of "
-"what you pay."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
-msgid "Fixed issue with spin buttons not updating properly."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
-msgid "Created a proper app description."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:38
-msgid "Initial Release."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:74
-msgid "Jeremy Vaartjes"
-msgstr ""
 
 #: src/Application.vala:158
 msgid "Today"
@@ -84,6 +28,10 @@ msgstr ""
 
 #: src/Application.vala:162
 msgid " Days"
+msgstr ""
+
+#: src/Application.vala:233
+msgid "SubMinder"
 msgstr ""
 
 #: src/Application.vala:235

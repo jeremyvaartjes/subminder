@@ -1,5 +1,3 @@
-data/com.github.jeremyvaartjes.subminder.desktop.in
-data/com.github.jeremyvaartjes.subminder.appdata.xml.in
 src/Application.vala
 src/AddSubscriptionDialog.vala
 src/DefaultCurrencyDialog.vala
