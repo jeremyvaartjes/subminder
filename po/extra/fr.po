@@ -48,7 +48,7 @@ msgid ""
 msgstr ""
 "SubMinder peut vous aider à suivre les échéances de vos abonnements. Vous pouvez créer "
 "une liste de vos abonnements et quand un paiement est à venir, vous pouvez obtenir une "
-"notification avec le nom de l'abonnement à venir et combien il coûtera.""
+"notification avec le nom de l'abonnement à venir et combien il coûtera."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
 msgid ""
