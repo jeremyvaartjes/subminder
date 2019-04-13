@@ -247,6 +247,7 @@ public class SubMinder : Gtk.Application {
             averageCostGrid.attach (aCGCost, 1, 0, 1, 2);
 
             addSubButton = new Gtk.Button.from_icon_name("list-add", LARGE_TOOLBAR);
+            addSubButton.tooltip_text = _("Add Subscription");
             addSubButton.clicked.connect(() => {
                 var dialog = new AddSubscriptionDialog (this);
                 dialog.transient_for = this.mainWindow;
@@ -264,6 +265,7 @@ public class SubMinder : Gtk.Application {
             });
 
             defaultCurrencyButton = new Gtk.Button.with_label(settings.default_currency);
+            defaultCurrencyButton.tooltip_text = _("Set Default Currency");
             if(settings.default_currency == "UNSET"){
                 defaultCurrencyButton.label = _("Set Default Currency");
             }
