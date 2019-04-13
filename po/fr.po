@@ -1,212 +1,162 @@
 # French translations for com.github.jeremyvaartjes.subminder package.
 # Copyright (C) 2018 THE com.github.jeremyvaartjes.subminder'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.jeremyvaartjes.subminder package.
-# Automatically generated, 2018.
+# NathanBnm, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-07 13:34+1000\n"
+"POT-Creation-Date: 2019-04-10 17:32+0200\n"
 "PO-Revision-Date: 2018-11-09 15:02+1100\n"
-"Last-Translator: Automatically generated\n"
+"Last-Translator: NathanBnm\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:3
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
-#: src/Application.vala:233
-msgid "SubMinder"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:4
-msgid "Subscription Manager"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:5
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
-msgid "Keep tabs on your subscriptions"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:8
-msgid "com.github.jeremyvaartjes.subminder"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.desktop.in:11
-msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
-msgid ""
-"SubMinder can help you track what subscriptions are due when. You can create "
-"a list of your subscriptions and when a payment is upcoming you can get a "
-"notification with what subscription payment is coming up and how much it "
-"will cost."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
-msgid ""
-"SubMinder also provides you with how much you are paying on average per "
-"month. This can help you better manage what subscriptions you should keep "
-"paying to manage your budget. Subscriptions in a currency different to yours "
-"will be converted to your currency so that you can have a better picture of "
-"what you pay."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
-msgid "Fixed issue with spin buttons not updating properly."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
-msgid "Created a proper app description."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:38
-msgid "Initial Release."
-msgstr ""
-
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:74
-msgid "Jeremy Vaartjes"
-msgstr ""
-
 #: src/Application.vala:158
 msgid "Today"
-msgstr ""
+msgstr "Ajourd'hui"
 
 #: src/Application.vala:160
 msgid "Tomorrow"
-msgstr ""
+msgstr "Demains"
 
 #: src/Application.vala:162
 msgid " Days"
-msgstr ""
+msgstr " Jours"
+
+#: src/Application.vala:233
+msgid "SubMinder"
+msgstr "SubMinder"
 
 #: src/Application.vala:235
-msgid "<b>Average Expenses</b>"
-msgstr ""
+msgid "Average Expenses"
+msgstr "Dépenses moyennes"
 
 #: src/Application.vala:238
-msgid "<small>Per Month</small>"
-msgstr ""
+msgid "Per Month"
+msgstr "Par mois"
 
 #: src/Application.vala:256
 msgid "Subscription List"
-msgstr ""
+msgstr "Liste d'abonnements"
 
 #: src/Application.vala:268 src/DefaultCurrencyDialog.vala:42
 msgid "Set Default Currency"
-msgstr ""
+msgstr "Définir la devise par défaut"
 
 #: src/Application.vala:312
 msgid "Name:"
-msgstr ""
+msgstr "Nom :"
 
 #: src/Application.vala:313
 msgid "Description:"
-msgstr ""
+msgstr "Description :"
 
 #: src/Application.vala:314
 msgid "First Billing Date:"
-msgstr ""
+msgstr "Date de prélèvement :"
 
 #: src/Application.vala:315
 msgid "Billing Cycle:"
-msgstr ""
+msgstr "Cycle de prélèvement"
 
 #: src/Application.vala:316
 msgid "Remind Me:"
-msgstr ""
+msgstr "Rappelez-moi :"
 
 #: src/Application.vala:317
 msgid "Currency:"
-msgstr ""
+msgstr "Devise :"
 
 #: src/Application.vala:318
 msgid "Cost:"
-msgstr ""
+msgstr "Prix :"
 
 #: src/Application.vala:513 src/Application.vala:529
 msgid "Days"
-msgstr ""
+msgstr "Jours"
 
 #: src/Application.vala:515 src/Application.vala:531
 msgid "Weeks"
-msgstr ""
+msgstr "Semaines"
 
 #: src/Application.vala:517 src/Application.vala:533
 msgid "Months"
-msgstr ""
+msgstr "Mois"
 
 #: src/Application.vala:519 src/Application.vala:535
 msgid "Years"
-msgstr ""
+msgstr "Années"
 
 #: src/Application.vala:525
 msgid "Never"
-msgstr ""
+msgstr "Jamais"
 
 #: src/Application.vala:527
 msgid "Same Day"
-msgstr ""
+msgstr "Le jour même"
 
 #: src/Application.vala:549
 msgid "Delete subscription"
-msgstr ""
+msgstr "Supprimer l'abonnement"
 
 #: src/Application.vala:678
 msgid "Cannot run without thread support.\n"
-msgstr ""
+msgstr "Impossible d'exécuter sans support de fil.\n"
 
 #: src/AddSubscriptionDialog.vala:39
 msgid "Create Subscription"
-msgstr ""
+msgstr "Créer un abonnement"
 
 #: src/AddSubscriptionDialog.vala:43
 msgid "Create"
-msgstr ""
+msgstr "Créer"
 
 #: src/AddSubscriptionDialog.vala:47
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: src/AddSubscriptionDialog.vala:70
 msgid "Other Subscription"
-msgstr ""
+msgstr "Autre abonnement"
 
 #: src/AddSubscriptionDialog.vala:75
 msgid "Template"
-msgstr ""
+msgstr "Modèle"
 
 #: src/AddSubscriptionDialog.vala:81
 msgid "Choose a subscription template"
-msgstr ""
+msgstr "Choisissez un modèle d'abonnement"
 
 #: src/AddSubscriptionDialog.vala:84
 msgid ""
 "Got a suggestion? <a href=\"https://github.com/jeremyvaartjes/subminder/"
 "issues\">Post it here</a>."
 msgstr ""
+"Une suggestion ? <a href=\"https://github.com/jeremyvaartjes/subminder/issues"
+"\">Publiez-la ici</a>."
 
 #: src/DefaultCurrencyDialog.vala:46
 msgid "Set Currency"
-msgstr ""
+msgstr "Définir la devise"
 
 #: src/DefaultCurrencyDialog.vala:117
 msgid "Choose a default currency"
-msgstr ""
+msgstr "Choisissez une devise par défaut"
 
 #: src/SMCurrency.vala:47
 msgid "Cannot load currency data"
-msgstr ""
+msgstr "Impossible de charger les données des devises"
 
 #: src/SMCurrency.vala:57
-msgid "Downloading updated currency data...\n"
-msgstr ""
+msgid "Downloading updated currency data…\n"
+msgstr "Téléchargement des données de devises mises à jour…\n"
 
 #: src/Subscription.vala:202
 msgid "Cannot load file: "
-msgstr ""
+msgstr "Impossible de charger le fichier :"
