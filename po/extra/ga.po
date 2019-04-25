@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-10 12:13+0200\n"
+"POT-Creation-Date: 2019-04-25 18:57+1000\n"
 "PO-Revision-Date: 2019-04-10 12:13+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -57,17 +57,42 @@ msgid ""
 msgstr ""
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
-msgid "Fixed issue with spin buttons not updating properly."
+msgid "French translation from @NathanBnm."
 msgstr ""
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
+msgid "Tooltips added to header bar by @NathanBnm."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:32
+msgid ""
+"The app now shows the proper currency symbol instead of a dollar symbol."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
+msgid ""
+"You will now see both the currency of the subscription and the converted "
+"value for each subscription."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:34
+msgid ""
+"The add subscription window now has a search field and items in the list are "
+"sorted."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
+msgid "Fixed issue with spin buttons not updating properly."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
 msgid "Created a proper app description."
 msgstr ""
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:38
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:49
 msgid "Initial Release."
 msgstr ""
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:74
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:85
 msgid "Jeremy Vaartjes"
 msgstr ""
