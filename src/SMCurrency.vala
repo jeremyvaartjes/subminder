@@ -4,7 +4,7 @@
 //  |__   | | | . | | | | |   | . | -_|  _|
 //  |_____|___|___|_|_|_|_|_|_|___|___|_|  
 //                                         
-//                            Version 1.0.1
+//                            Version 1.1.0
 //  
 //        Jeremy Vaartjes<jeremy@vaartj.es>
 //  
@@ -30,12 +30,14 @@
 
 public class SMCurrency {
     public Gee.TreeMap<string, string> currencies;
+    public Gee.TreeMap<string, string> currencySymbols;
     public Gee.TreeMap<string, double?> currencyPrices;
     public bool dbNeedsUpdate;
 
     public SMCurrency() throws IOError, Error{
         dbNeedsUpdate = false;
         currencies = new Gee.TreeMap<string, string>();
+        currencySymbols = new Gee.TreeMap<string, string>();
         currencyPrices = new Gee.TreeMap<string, double?>();
         var cFile = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.subminder/currency/currency.json");
         var acFile = File.new_for_path(Environment.get_user_data_dir() + "/com.github.jeremyvaartjes.subminder/currency/availablecurrencies.json");
@@ -71,7 +73,9 @@ public class SMCurrency {
                         cObj = cObj.get_object_member ("rates");
 
                         acObj.foreach_member((obj, member_name, member_node) => {
-                            currencies[member_name] = obj.get_string_member (member_name);
+                            var tmpObj = obj.get_object_member(member_name);
+                            currencies[member_name] = tmpObj.get_string_member ("name");
+                            currencySymbols[member_name] = tmpObj.get_string_member ("char");
                             currencyPrices[member_name] = cObj.get_double_member (member_name);
                         });
                     }catch(Error e){
@@ -96,7 +100,9 @@ public class SMCurrency {
             cObj = cObj.get_object_member ("rates");
 
             acObj.foreach_member((obj, member_name, member_node) => {
-                currencies[member_name] = obj.get_string_member (member_name);
+                var tmpObj = obj.get_object_member(member_name);
+                currencies[member_name] = tmpObj.get_string_member ("name");
+                currencySymbols[member_name] = tmpObj.get_string_member ("char");
                 currencyPrices[member_name] = cObj.get_double_member (member_name);
             });
         }
@@ -118,7 +124,7 @@ public class SMCurrency {
             while ((line = data_stream.read_line ()) != null) {
                 cDat += line + "\n";
             }
-            request = session.request ("https://jeremy.vaartj.es/availablecurrencies.json");
+            request = session.request ("https://jeremy.vaartj.es/availablecurrencies_v2.json");
             stream = request.send ();
             data_stream = new DataInputStream (stream);
             string acDat = "";

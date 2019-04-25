@@ -24,6 +24,17 @@
   </screenshots>
 
   <releases>
+    <release version="1.1.0" date="2019-04-25">
+      <description>
+        <ul>
+          <li>French translation from @NathanBnm.</li>
+          <li>Tooltips added to header bar by @NathanBnm.</li>
+          <li>The app now shows the proper currency symbol instead of a dollar symbol.</li>
+          <li>You will now see both the currency of the subscription and the converted value for each subscription.</li>
+          <li>The add subscription window now has a search field and items in the list are sorted.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.1" date="2019-04-07">
       <description>
         <ul>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-10 17:32+0200\n"
+"POT-Creation-Date: 2019-04-25 18:15+1000\n"
 "PO-Revision-Date: 2018-11-09 15:02+1100\n"
 "Last-Translator: NathanBnm\n"
 "Language-Team: none\n"
@@ -17,123 +17,129 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: src/Application.vala:158
+#: src/Application.vala:192
 msgid "Today"
 msgstr "Ajourd'hui"
 
-#: src/Application.vala:160
+#: src/Application.vala:194
 msgid "Tomorrow"
 msgstr "Demains"
 
-#: src/Application.vala:162
+#: src/Application.vala:196
 msgid " Days"
 msgstr " Jours"
 
-#: src/Application.vala:233
+#: src/Application.vala:271
 msgid "SubMinder"
 msgstr "SubMinder"
 
-#: src/Application.vala:235
+#: src/Application.vala:273
 msgid "Average Expenses"
 msgstr "Dépenses moyennes"
 
-#: src/Application.vala:238
+#: src/Application.vala:276
 msgid "Per Month"
 msgstr "Par mois"
 
-#: src/Application.vala:256
+#: src/Application.vala:288
+#, fuzzy
+msgid "Add Subscription"
+msgstr "Autre abonnement"
+
+#: src/Application.vala:295
 msgid "Subscription List"
 msgstr "Liste d'abonnements"
 
-#: src/Application.vala:268 src/DefaultCurrencyDialog.vala:42
+#: src/Application.vala:306 src/Application.vala:308
+#: src/DefaultCurrencyDialog.vala:42
 msgid "Set Default Currency"
 msgstr "Définir la devise par défaut"
 
-#: src/Application.vala:312
+#: src/Application.vala:352
 msgid "Name:"
 msgstr "Nom :"
 
-#: src/Application.vala:313
+#: src/Application.vala:353
 msgid "Description:"
 msgstr "Description :"
 
-#: src/Application.vala:314
+#: src/Application.vala:354
 msgid "First Billing Date:"
 msgstr "Date de prélèvement :"
 
-#: src/Application.vala:315
+#: src/Application.vala:355
 msgid "Billing Cycle:"
 msgstr "Cycle de prélèvement"
 
-#: src/Application.vala:316
+#: src/Application.vala:356
 msgid "Remind Me:"
 msgstr "Rappelez-moi :"
 
-#: src/Application.vala:317
+#: src/Application.vala:357
 msgid "Currency:"
 msgstr "Devise :"
 
-#: src/Application.vala:318
+#: src/Application.vala:358
 msgid "Cost:"
 msgstr "Prix :"
 
-#: src/Application.vala:513 src/Application.vala:529
+#: src/Application.vala:552 src/Application.vala:568
 msgid "Days"
 msgstr "Jours"
 
-#: src/Application.vala:515 src/Application.vala:531
+#: src/Application.vala:554 src/Application.vala:570
 msgid "Weeks"
 msgstr "Semaines"
 
-#: src/Application.vala:517 src/Application.vala:533
+#: src/Application.vala:556 src/Application.vala:572
 msgid "Months"
 msgstr "Mois"
 
-#: src/Application.vala:519 src/Application.vala:535
+#: src/Application.vala:558 src/Application.vala:574
 msgid "Years"
 msgstr "Années"
 
-#: src/Application.vala:525
+#: src/Application.vala:564
 msgid "Never"
 msgstr "Jamais"
 
-#: src/Application.vala:527
+#: src/Application.vala:566
 msgid "Same Day"
 msgstr "Le jour même"
 
-#: src/Application.vala:549
+#: src/Application.vala:588
 msgid "Delete subscription"
 msgstr "Supprimer l'abonnement"
 
-#: src/Application.vala:678
+#: src/Application.vala:721
 msgid "Cannot run without thread support.\n"
 msgstr "Impossible d'exécuter sans support de fil.\n"
 
-#: src/AddSubscriptionDialog.vala:39
+#: src/AddSubscriptionDialog.vala:40
 msgid "Create Subscription"
 msgstr "Créer un abonnement"
 
-#: src/AddSubscriptionDialog.vala:43
+#: src/AddSubscriptionDialog.vala:44
 msgid "Create"
 msgstr "Créer"
 
-#: src/AddSubscriptionDialog.vala:47
+#: src/AddSubscriptionDialog.vala:48
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/AddSubscriptionDialog.vala:70
+#: src/AddSubscriptionDialog.vala:81
 msgid "Other Subscription"
 msgstr "Autre abonnement"
 
-#: src/AddSubscriptionDialog.vala:75
+#: src/AddSubscriptionDialog.vala:86
 msgid "Template"
 msgstr "Modèle"
 
-#: src/AddSubscriptionDialog.vala:81
+#: src/AddSubscriptionDialog.vala:92
 msgid "Choose a subscription template"
 msgstr "Choisissez un modèle d'abonnement"
 
-#: src/AddSubscriptionDialog.vala:84
+#: src/AddSubscriptionDialog.vala:95
 msgid ""
 "Got a suggestion? <a href=\"https://github.com/jeremyvaartjes/subminder/"
 "issues\">Post it here</a>."
@@ -145,15 +151,15 @@ msgstr ""
 msgid "Set Currency"
 msgstr "Définir la devise"
 
-#: src/DefaultCurrencyDialog.vala:117
+#: src/DefaultCurrencyDialog.vala:69
 msgid "Choose a default currency"
 msgstr "Choisissez une devise par défaut"
 
-#: src/SMCurrency.vala:47
+#: src/SMCurrency.vala:49
 msgid "Cannot load currency data"
 msgstr "Impossible de charger les données des devises"
 
-#: src/SMCurrency.vala:57
+#: src/SMCurrency.vala:59
 msgid "Downloading updated currency data…\n"
 msgstr "Téléchargement des données de devises mises à jour…\n"
 

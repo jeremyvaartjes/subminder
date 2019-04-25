@@ -4,7 +4,7 @@
 //  |__   | | | . | | | | |   | . | -_|  _|
 //  |_____|___|___|_|_|_|_|_|_|___|___|_|  
 //                                         
-//                            Version 1.0.1
+//                            Version 1.1.0
 //  
 //        Jeremy Vaartjes<jeremy@vaartj.es>
 //  
@@ -87,7 +87,7 @@ public class SubMinder : Gtk.Application {
         }catch(Error e){
             stdout.printf("Error: %s\n", e.message);
         }
-        
+
         selectedRowId = 0;
 
         subs = new Gee.TreeMap<int, Subscription>();
@@ -133,7 +133,7 @@ public class SubMinder : Gtk.Application {
 
             row.fileId = entry.key;
             row.subName = entry.value.name;
-            
+
             var subName = new Gtk.Label(entry.value.name);
             subName.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
             subName.xalign = 0;
@@ -147,7 +147,41 @@ public class SubMinder : Gtk.Application {
             }else{
                 amountStr += (entry.value.amount % 100).to_string();
             }
-            var subCost = new Gtk.Label("$" + amountStr);
+            if(entry.value.currency != settings.default_currency){
+                amountStr += " (" + entry.value.currency + ")";
+
+                double amountConverted = 0;
+                if(settings.default_currency == "EUR"){
+                    if(entry.value.currency == "EUR"){
+                        amountConverted = entry.value.amount;
+                    }else{
+                        amountConverted = entry.value.amount / currency.currencyPrices[entry.value.currency];
+                    }
+                }else{
+                    if(entry.value.currency == settings.default_currency){
+                        amountConverted = entry.value.amount;
+                    }else{
+                        if(entry.value.currency == "EUR"){
+                            amountConverted = entry.value.amount * currency.currencyPrices[entry.value.currency];
+                        }else{
+                            amountConverted = entry.value.amount * currency.currencyPrices[settings.default_currency] / currency.currencyPrices[entry.value.currency];
+                        }
+                    }
+                }
+                int amountNative = (int)amountConverted;
+                var amountStrNative = (amountNative / 100).to_string() + ".";
+                if(amountNative % 100 < 10){
+                    amountStrNative += "0" + (amountNative % 100).to_string();
+                }else{
+                    amountStrNative += (amountNative % 100).to_string();
+                }
+                var subCostNative = new Gtk.Label(currency.currencySymbols[settings.default_currency] + amountStrNative);
+                subCostNative.xalign = 1;
+                subCostNative.hexpand = true;
+                subCostNative.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+                rowGrid.attach (subCostNative, 1, 1, 1, 1);
+            }
+            var subCost = new Gtk.Label(currency.currencySymbols[entry.value.currency] + amountStr);
             subCost.xalign = 1;
             subCost.hexpand = true;
             subCost.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
@@ -164,7 +198,11 @@ public class SubMinder : Gtk.Application {
             var subNextBill = new Gtk.Label(numDaysStr);
             subNextBill.xalign = 1;
             subNextBill.hexpand = true;
-            rowGrid.attach (subNextBill, 1, 1, 1, 1);
+            if(entry.value.currency == settings.default_currency){
+                rowGrid.attach (subNextBill, 1, 1, 1, 1);
+            }else{
+                rowGrid.attach (subNextBill, 1, 2, 1, 1);
+            }
             subListView.add(row);
         }
         subListView.show_all();
@@ -193,7 +231,7 @@ public class SubMinder : Gtk.Application {
                         }
                     }
                 }
-                
+
                 switch(entry.value.cycle.type){
                     case DAY:
                         total += (int)(amountConverted * 365 / entry.value.cycle.qty);
@@ -216,7 +254,7 @@ public class SubMinder : Gtk.Application {
             }else{
                 amountStr += (average % 100).to_string();
             }
-            aCGCost.label = "$" + amountStr;
+            aCGCost.label = currency.currencySymbols[settings.default_currency] + amountStr;
         }else{
             aCGCost.label = "";
         }
@@ -238,7 +276,7 @@ public class SubMinder : Gtk.Application {
             var aCGPeriod = new Gtk.Label("<small>" + _("Per Month") + "</small>");
             aCGPeriod.use_markup = true;
             aCGPeriod.xalign = 0;
-            aCGCost = new Gtk.Label("$0.00");
+            aCGCost = new Gtk.Label("0.00");
 
             var averageCostGrid = new Gtk.Grid();
             averageCostGrid.column_spacing = 15;
@@ -479,7 +517,6 @@ public class SubMinder : Gtk.Application {
             subDetailsAmount.digits = 2;
             subDetailsAmount.value_changed.connect(() => {
                 if(selectedRowId != 0){
-                    stdout.printf("%d\n", (int)(subDetailsAmount.value * 100));
                     subs[selectedRowId].amount = (int)(subDetailsAmount.value * 100);
                     try{
                         subs[selectedRowId].write();
@@ -672,8 +709,12 @@ public class SubMinder : Gtk.Application {
         var app = new SubMinder ();
 
         if (notif) {
-            app.register();
-            app.doNotif(notifId, notifTitle, notifBody);
+            try{
+                app.register();
+                app.doNotif(notifId, notifTitle, notifBody);
+            }catch(Error e){
+                stdout.printf("Error: %s\n", e.message);
+            }
             return 0;
         }else{
             if (!Thread.supported ()) {

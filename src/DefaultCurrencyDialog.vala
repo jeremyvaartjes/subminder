@@ -4,7 +4,7 @@
 //  |__   | | | . | | | | |   | . | -_|  _|
 //  |_____|___|___|_|_|_|_|_|_|___|___|_|  
 //                                         
-//                            Version 1.0.1
+//                            Version 1.1.0
 //  
 //        Jeremy Vaartjes<jeremy@vaartj.es>
 //  
@@ -42,58 +42,10 @@ public class DefaultCurrencyDialog : Gtk.Dialog {
         title = _("Set Default Currency");
         window_position = Gtk.WindowPosition.CENTER_ON_PARENT;
         type_hint = Gdk.WindowTypeHint.DIALOG;
-        
+
         var setButton = new Gtk.Button.with_label (_("Set Currency"));
         setButton.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         setButton.clicked.connect (saveDialog);
-
-        /*var currencyListStore = new Gtk.ListStore (1, typeof (string));
-        Gtk.TreeIter iter;
-
-        string[] systemDirs = Environment.get_system_data_dirs ();
-        foreach (var dir in systemDirs) {
-            var file = File.new_for_path(dir + "/com.github.jeremyvaartjes.subminder/com.github.jeremyvaartjes.subminder.templates.json");
-            if (file.query_exists ()){
-                Json.Parser parser = new Json.Parser ();
-                parser.load_from_file (dir + "/com.github.jeremyvaartjes.subminder/com.github.jeremyvaartjes.subminder.templates.json");
-                Json.Node node = parser.get_root ();
-                Json.Array templateArray = node.get_object ().get_array_member("templates");
-                foreach (Json.Node n in templateArray.get_elements ()) {
-                    Json.Object o = n.get_object ();
-                    templateListStore.append (out iter);
-                    templateListStore.set (iter, 0, o.get_string_member("name"));
-                }
-            }
-        }
-
-        templateListStore.append (out iter);
-        templateListStore.set (iter, 0, _("Other Subscription"));
-
-        var scroller = new Gtk.ScrolledWindow(null, null);
-        templateView = new Gtk.TreeView.with_model (templateListStore);
-        var templateListCell = new Gtk.CellRendererText ();
-        templateView.insert_column_with_attributes (-1, _("Template"), templateListCell, "text", 0);
-        templateView.headers_visible = false;
-        scroller.add(templateView);
-        scroller.width_request = 400;
-        scroller.height_request = 300;
-
-        var title = new Gtk.Label(_("Choose a subscription template"));
-        title.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-
-        var suggestionLabel = new Gtk.Label(_("Got a suggestion? <a href=\"https://jeremy.vaartj.es\">Post it here</a>."));
-        suggestionLabel.use_markup = true;
-
-        var grid = new Gtk.Grid ();
-        grid.row_spacing = 12;
-        grid.column_spacing = 12;
-        grid.margin_start = 12;
-        grid.margin_end = 12;
-        grid.attach (title, 0, 0, 2, 1);
-        grid.attach (scroller, 0, 1, 2, 1);
-        grid.attach (suggestionLabel, 0, 2, 2, 1);
-        grid.attach (createButton, 1, 3, 1, 1);
-        grid.attach (cancelButton, 0, 3, 1, 1);*/
 
         currencyListStore = new Gtk.ListStore (1, typeof (string));
         currencyView = new Gtk.ComboBox.with_model (currencyListStore);

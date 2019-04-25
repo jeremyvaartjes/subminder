@@ -1,3 +1,13 @@
+com.github.jeremyvaartjes.subminder (1.1.0) bionic; urgency=medium
+
+  * French translation from @NathanBnm
+  * Tooltips added to header bar by @NathanBnm
+  * The app now shows the proper currency symbol instead of a dollar symbol
+  * You will now see both the currency of the subscription and the converted value for each subscription
+  * The add subscription window now has a search field and items in the list are sorted
+
+ -- Jeremy Vaartjes <jeremy@vaartj.es>  Thu, 25 Apr 2019 18:10:22 +1000
+
 com.github.jeremyvaartjes.subminder (1.0.1) bionic; urgency=medium
 
   * Fixed issue with spin buttons not updating properly.
