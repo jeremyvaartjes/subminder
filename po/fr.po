@@ -42,9 +42,8 @@ msgid "Per Month"
 msgstr "Par mois"
 
 #: src/Application.vala:288
-#, fuzzy
 msgid "Add Subscription"
-msgstr "Autre abonnement"
+msgstr "Ajouter un abonnement"
 
 #: src/Application.vala:295
 msgid "Subscription List"
