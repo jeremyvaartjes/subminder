@@ -1,165 +1,168 @@
 # Spanish translations for com.github.jeremyvaartjes.subminder package.
 # Copyright (C) 2018 THE com.github.jeremyvaartjes.subminder'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.jeremyvaartjes.subminder package.
-# Automatically generated, 2018.
+# Adolfo Jayme Barrientos, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jeremyvaartjes.subminder\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-25 18:15+1000\n"
-"PO-Revision-Date: 2018-11-09 15:02+1100\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2019-09-10 02:07-0500\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: src/Application.vala:192
 msgid "Today"
-msgstr ""
+msgstr "Hoy"
 
 #: src/Application.vala:194
 msgid "Tomorrow"
-msgstr ""
+msgstr "Mañana"
 
 #: src/Application.vala:196
 msgid " Days"
-msgstr ""
+msgstr "Días"
 
 #: src/Application.vala:271
 msgid "SubMinder"
-msgstr ""
+msgstr "SubMinder"
 
 #: src/Application.vala:273
 msgid "Average Expenses"
-msgstr ""
+msgstr "Promedio de gastos"
 
 #: src/Application.vala:276
 msgid "Per Month"
-msgstr ""
+msgstr "Por mes"
 
 #: src/Application.vala:288
 msgid "Add Subscription"
-msgstr ""
+msgstr "Añadir suscripción"
 
 #: src/Application.vala:295
 msgid "Subscription List"
-msgstr ""
+msgstr "Lista de suscripciones"
 
 #: src/Application.vala:306 src/Application.vala:308
 #: src/DefaultCurrencyDialog.vala:42
 msgid "Set Default Currency"
-msgstr ""
+msgstr "Establecer moneda predeterminada"
 
 #: src/Application.vala:352
 msgid "Name:"
-msgstr ""
+msgstr "Nombre:"
 
 #: src/Application.vala:353
 msgid "Description:"
-msgstr ""
+msgstr "Descripción:"
 
 #: src/Application.vala:354
 msgid "First Billing Date:"
-msgstr ""
+msgstr "Fecha de facturación inicial:"
 
 #: src/Application.vala:355
 msgid "Billing Cycle:"
-msgstr ""
+msgstr "Ciclo de facturaciones:"
 
 #: src/Application.vala:356
 msgid "Remind Me:"
-msgstr ""
+msgstr "Recordarme:"
 
 #: src/Application.vala:357
 msgid "Currency:"
-msgstr ""
+msgstr "Moneda:"
 
 #: src/Application.vala:358
 msgid "Cost:"
-msgstr ""
+msgstr "Importe:"
 
 #: src/Application.vala:552 src/Application.vala:568
 msgid "Days"
-msgstr ""
+msgstr "Días"
 
 #: src/Application.vala:554 src/Application.vala:570
 msgid "Weeks"
-msgstr ""
+msgstr "Semanas"
 
 #: src/Application.vala:556 src/Application.vala:572
 msgid "Months"
-msgstr ""
+msgstr "Meses"
 
 #: src/Application.vala:558 src/Application.vala:574
 msgid "Years"
-msgstr ""
+msgstr "Años"
 
 #: src/Application.vala:564
 msgid "Never"
-msgstr ""
+msgstr "Nunca"
 
 #: src/Application.vala:566
 msgid "Same Day"
-msgstr ""
+msgstr "El mismo día"
 
 #: src/Application.vala:588
 msgid "Delete subscription"
-msgstr ""
+msgstr "Eliminar suscripción"
 
 #: src/Application.vala:721
 msgid "Cannot run without thread support.\n"
-msgstr ""
+msgstr "No puede ejecutarse si no se permiten los subprocesos.\n"
 
 #: src/AddSubscriptionDialog.vala:40
 msgid "Create Subscription"
-msgstr ""
+msgstr "Crear suscripción"
 
 #: src/AddSubscriptionDialog.vala:44
 msgid "Create"
-msgstr ""
+msgstr "Crear"
 
 #: src/AddSubscriptionDialog.vala:48
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: src/AddSubscriptionDialog.vala:81
 msgid "Other Subscription"
-msgstr ""
+msgstr "Otra suscripción"
 
 #: src/AddSubscriptionDialog.vala:86
 msgid "Template"
-msgstr ""
+msgstr "Plantilla"
 
 #: src/AddSubscriptionDialog.vala:92
 msgid "Choose a subscription template"
-msgstr ""
+msgstr "Elija una plantilla de suscripción"
 
 #: src/AddSubscriptionDialog.vala:95
 msgid ""
-"Got a suggestion? <a href=\"https://github.com/jeremyvaartjes/subminder/"
-"issues\">Post it here</a>."
+"Got a suggestion? <a href=\"https://github.com/jeremyvaartjes/subminder/issues"
+"\">Post it here</a>."
 msgstr ""
+"¿Tiene una sugerencia? <a href=\"https://github.com/jeremyvaartjes/subminder/"
+"issues\">Publíquela aquí</a> (en inglés)."
 
 #: src/DefaultCurrencyDialog.vala:46
 msgid "Set Currency"
-msgstr ""
+msgstr "Establecer moneda"
 
 #: src/DefaultCurrencyDialog.vala:69
 msgid "Choose a default currency"
-msgstr ""
+msgstr "Elija una moneda predeterminada"
 
 #: src/SMCurrency.vala:49
 msgid "Cannot load currency data"
-msgstr ""
+msgstr "No se pueden cargar los datos monetarios"
 
 #: src/SMCurrency.vala:59
 msgid "Downloading updated currency data…\n"
-msgstr ""
+msgstr "Descargando datos monetarios actualizados…\n"
 
 #: src/Subscription.vala:202
 msgid "Cannot load file: "
-msgstr ""
+msgstr "No se puede cargar el archivo: "

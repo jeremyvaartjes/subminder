@@ -1,51 +1,55 @@
 # Spanish translations for extra package.
 # Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the extra package.
-# Automatically generated, 2019.
+# Adolfo Jayme Barrientos, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-25 18:57+1000\n"
-"PO-Revision-Date: 2019-04-10 12:13+0200\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2019-09-08 08:36-0500\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:3
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
 msgid "SubMinder"
-msgstr ""
+msgstr "SubMinder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:4
 msgid "Subscription Manager"
-msgstr ""
+msgstr "Gestor de suscripciones"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:5
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
 msgid "Keep tabs on your subscriptions"
-msgstr ""
+msgstr "Esté pendiente de sus suscripciones"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:8
 msgid "com.github.jeremyvaartjes.subminder"
-msgstr ""
+msgstr "com.github.jeremyvaartjes.subminder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:11
 msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
-msgstr ""
+msgstr "Suscripción;Gestor;Sub;Minder;Dinero;Recordatorio;"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
 msgid ""
 "SubMinder can help you track what subscriptions are due when. You can create "
 "a list of your subscriptions and when a payment is upcoming you can get a "
-"notification with what subscription payment is coming up and how much it "
-"will cost."
+"notification with what subscription payment is coming up and how much it will "
+"cost."
 msgstr ""
+"SubMinder puede ayudarle a llevar la cuenta de las fechas de pago de sus "
+"suscripciones. Puede crear una lista de suscripciones y, cuando se aproxime "
+"un pago, podrá recibir notificaciones sobre la fecha y el monto."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
 msgid ""
@@ -55,44 +59,55 @@ msgid ""
 "will be converted to your currency so that you can have a better picture of "
 "what you pay."
 msgstr ""
+"SubMinder también le avisa cuánto paga por mes. Ello puede ayudarle a "
+"gestionar mejor su presupuesto y saber cuáles suscripciones mantener. "
+"Aquellas suscripciones pagadas en otras divisas se convertirán a su moneda "
+"para que se dé una idea más precisa de lo que desembolsa."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
 msgid "French translation from @NathanBnm."
-msgstr ""
+msgstr "Traducción al francés de @NathanBnm."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
 msgid "Tooltips added to header bar by @NathanBnm."
 msgstr ""
+"@NathanBnm añadió descripciones emergentes a los elementos de la barra de "
+"cabecera."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:32
-msgid ""
-"The app now shows the proper currency symbol instead of a dollar symbol."
+msgid "The app now shows the proper currency symbol instead of a dollar symbol."
 msgstr ""
+"La aplicación ahora muestra el símbolo monetario adecuado en lugar de un "
+"símbolo de dólar."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
 msgid ""
 "You will now see both the currency of the subscription and the converted "
 "value for each subscription."
 msgstr ""
+"Ahora verá tanto la divisa de la suscripción como el valor convertido "
+"correspondiente."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:34
 msgid ""
 "The add subscription window now has a search field and items in the list are "
 "sorted."
 msgstr ""
+"La ventana Añadir suscripción ahora tiene un campo de búsqueda y los "
+"elementos en la lista están ordenados."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
 msgid "Fixed issue with spin buttons not updating properly."
-msgstr ""
+msgstr "Se corrigió un error de actualización de los botones de número."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
 msgid "Created a proper app description."
-msgstr ""
+msgstr "Se creó una descripción adecuada para la aplicación."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:49
 msgid "Initial Release."
-msgstr ""
+msgstr "Publicación inicial."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:85
 msgid "Jeremy Vaartjes"
-msgstr ""
+msgstr "Jeremy Vaartjes"
