@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-25 18:57+1000\n"
-"PO-Revision-Date: 2019-04-10 12:13+0200\n"
+"PO-Revision-Date: 2020-01-16 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: nl\n"
@@ -16,28 +16,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:3
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
 msgid "SubMinder"
-msgstr ""
+msgstr "SubMinder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:4
 msgid "Subscription Manager"
-msgstr ""
+msgstr "Abonnementenbeheer"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:5
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
 msgid "Keep tabs on your subscriptions"
-msgstr ""
+msgstr "Houd zicht op je abonnementen"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:8
 msgid "com.github.jeremyvaartjes.subminder"
-msgstr ""
+msgstr "com.github.jeremyvaartjes.subminder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:11
 msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
-msgstr ""
+msgstr "Abonnement;Beheer;Sub;Minder;Geld;Herinnering;"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
 msgid ""
@@ -46,6 +47,9 @@ msgid ""
 "notification with what subscription payment is coming up and how much it "
 "will cost."
 msgstr ""
+"Met SubMinder houd je in de gaten welke abonnementen worden afgeschreven en "
+"wanneer. Je kunt een lijst maken met abonnementen en een melding ontvangen "
+"zodra er een afschrijving gaat plaatsvinden."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
 msgid ""
@@ -55,44 +59,53 @@ msgid ""
 "will be converted to your currency so that you can have a better picture of "
 "what you pay."
 msgstr ""
+"SubMinder biedt tevens inzicht in wat je gemiddeld per maand uitgeeft. Dit "
+"helpt je beter om te gaan met abonnementen zodat je je budget niet "
+"overschrijdt. Abonnementen in andere valuta worden automatisch omgezet in "
+"jouw valuta zodat je nóg beter inzicht krijgt."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
 msgid "French translation from @NathanBnm."
-msgstr ""
+msgstr "Franse vertaling, met dank aan @NathanBnm"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
 msgid "Tooltips added to header bar by @NathanBnm."
-msgstr ""
+msgstr "Hulpballonnen toegevoegd, met dank aan @NathanBnm"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:32
 msgid ""
 "The app now shows the proper currency symbol instead of a dollar symbol."
 msgstr ""
+"SubMinder toont nu het juiste valutasymbool in plaats van een dollarsymbool."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
 msgid ""
 "You will now see both the currency of the subscription and the converted "
 "value for each subscription."
 msgstr ""
+"Je kunt nu zowel de valuta van het abonnement als de omgezette valuta zien "
+"bij elk abonnement."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:34
 msgid ""
 "The add subscription window now has a search field and items in the list are "
 "sorted."
 msgstr ""
+"Het venster 'Abonnement toevoegen' bevat nu een zoekbalk, en items op de "
+"lijst worden nu gesorteerd."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
 msgid "Fixed issue with spin buttons not updating properly."
-msgstr ""
+msgstr "Probleem opgelost met niet-draaiende knoppen."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
 msgid "Created a proper app description."
-msgstr ""
+msgstr "Goede toepassingsomschrijving toegevoegd."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:49
 msgid "Initial Release."
-msgstr ""
+msgstr "Initiële uitgave"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:85
 msgid "Jeremy Vaartjes"
-msgstr ""
+msgstr "Jeremy Vaartjes"
