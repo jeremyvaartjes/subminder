@@ -1,12 +1,11 @@
 com.github.jeremyvaartjes.subminder (1.2.0) bionic; urgency=medium
 
-  * French translation from @NathanBnm
-  * Tooltips added to header bar by @NathanBnm
-  * The app now shows the proper currency symbol instead of a dollar symbol
-  * You will now see both the currency of the subscription and the converted value for each subscription
-  * The add subscription window now has a search field and items in the list are sorted
+  * French translation update from @NathanBnm
+  * Spanish translation from @fitojb
+  * Dutch translation from @Vistaus
+  * Icon now resembles gold coin
 
- -- Jeremy Vaartjes <jeremy@vaartj.es>  Thu, 25 Apr 2019 18:10:22 +1000
+ -- Jeremy Vaartjes <jeremy@vaartj.es>  Sun, 26 Jan 2020 21:57:00 +1100
 
 com.github.jeremyvaartjes.subminder (1.1.0) bionic; urgency=medium
 

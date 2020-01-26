@@ -3,7 +3,7 @@ Upstream-Name: subminder
 Source: https://github.com/jeremyvaartjes/subminder
 
 Files: src/* data/* debian/*
-Copyright: 2018 Jeremy Vaartjes <jeremy@vaartj.es>
+Copyright: 2020 Jeremy Vaartjes <jeremy@vaartj.es>
 License: GPL-3.0+
 
 License: GPL-3.0+

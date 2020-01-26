@@ -24,6 +24,16 @@
   </screenshots>
 
   <releases>
+    <release version="1.2.0" date="2020-01-26">
+      <description>
+        <ul>
+          <li>French translation update from @NathanBnm</li>
+          <li>Spanish translation from @fitojb</li>
+          <li>Dutch translation from @Vistaus</li>
+          <li>Icon now resembles gold coin</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.0" date="2019-04-25">
       <description>
         <ul>
