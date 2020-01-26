@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-25 18:57+1000\n"
+"POT-Creation-Date: 2020-01-26 22:07+1100\n"
 "PO-Revision-Date: 2019-04-10 12:13+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -66,42 +66,58 @@ msgstr ""
 "what you pay."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
-msgid "French translation from @NathanBnm."
+msgid "French translation update from @NathanBnm"
 msgstr ""
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
-msgid "Tooltips added to header bar by @NathanBnm."
+msgid "Spanish translation from @fitojb"
 msgstr ""
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:32
+msgid "Dutch translation from @Vistaus"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
+msgid "Icon now resembles gold coin"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:40
+msgid "French translation from @NathanBnm."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
+msgid "Tooltips added to header bar by @NathanBnm."
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
 msgid ""
 "The app now shows the proper currency symbol instead of a dollar symbol."
 msgstr ""
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:43
 msgid ""
 "You will now see both the currency of the subscription and the converted "
 "value for each subscription."
 msgstr ""
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:34
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:44
 msgid ""
 "The add subscription window now has a search field and items in the list are "
 "sorted."
 msgstr ""
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:51
 msgid "Fixed issue with spin buttons not updating properly."
 msgstr "Fixed issue with spin buttons not updating properly."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:52
 msgid "Created a proper app description."
 msgstr "Created a proper app description."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:49
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:59
 msgid "Initial Release."
 msgstr "Initial Release."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:85
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:95
 msgid "Jeremy Vaartjes"
 msgstr "Jeremy Vaartjes"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-25 18:57+1000\n"
+"POT-Creation-Date: 2020-01-26 22:07+1100\n"
 "PO-Revision-Date: 2020-01-16 20:53+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -65,20 +65,39 @@ msgstr ""
 "jouw valuta zodat je nóg beter inzicht krijgt."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
-msgid "French translation from @NathanBnm."
+#, fuzzy
+msgid "French translation update from @NathanBnm"
 msgstr "Franse vertaling, met dank aan @NathanBnm"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
+#, fuzzy
+msgid "Spanish translation from @fitojb"
+msgstr "Franse vertaling, met dank aan @NathanBnm"
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:32
+#, fuzzy
+msgid "Dutch translation from @Vistaus"
+msgstr "Franse vertaling, met dank aan @NathanBnm"
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
+msgid "Icon now resembles gold coin"
+msgstr ""
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:40
+msgid "French translation from @NathanBnm."
+msgstr "Franse vertaling, met dank aan @NathanBnm"
+
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
 msgid "Tooltips added to header bar by @NathanBnm."
 msgstr "Hulpballonnen toegevoegd, met dank aan @NathanBnm"
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:32
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
 msgid ""
 "The app now shows the proper currency symbol instead of a dollar symbol."
 msgstr ""
 "SubMinder toont nu het juiste valutasymbool in plaats van een dollarsymbool."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:43
 msgid ""
 "You will now see both the currency of the subscription and the converted "
 "value for each subscription."
@@ -86,7 +105,7 @@ msgstr ""
 "Je kunt nu zowel de valuta van het abonnement als de omgezette valuta zien "
 "bij elk abonnement."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:34
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:44
 msgid ""
 "The add subscription window now has a search field and items in the list are "
 "sorted."
@@ -94,18 +113,18 @@ msgstr ""
 "Het venster 'Abonnement toevoegen' bevat nu een zoekbalk, en items op de "
 "lijst worden nu gesorteerd."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:51
 msgid "Fixed issue with spin buttons not updating properly."
 msgstr "Probleem opgelost met niet-draaiende knoppen."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:52
 msgid "Created a proper app description."
 msgstr "Goede toepassingsomschrijving toegevoegd."
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:49
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:59
 msgid "Initial Release."
 msgstr "Initiële uitgave"
 
-#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:85
+#: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:95
 msgid "Jeremy Vaartjes"
 msgstr "Jeremy Vaartjes"
