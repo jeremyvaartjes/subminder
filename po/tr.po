@@ -1,7 +1,7 @@
 # Turkish translations for com.github.jeremyvaartjes.subminder package.
 # Copyright (C) 2018 THE com.github.jeremyvaartjes.subminder'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the com.github.jeremyvaartjes.subminder package.
-# Automatically generated, 2018.
+# Safak Genisol, 2020.
 #
 msgid ""
 msgstr ""
@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-26 22:04+1100\n"
 "PO-Revision-Date: 2018-11-09 15:02+1100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"Last-Translator: Safak Genisol (@safak45x)\n"
+"Language-Team: Turkish\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,147 +19,149 @@ msgstr ""
 
 #: src/Application.vala:192
 msgid "Today"
-msgstr ""
+msgstr "Bugün"
 
 #: src/Application.vala:194
 msgid "Tomorrow"
-msgstr ""
+msgstr "Yarın"
 
 #: src/Application.vala:196
 msgid " Days"
-msgstr ""
+msgstr "Günler"
 
 #: src/Application.vala:271
 msgid "SubMinder"
-msgstr ""
+msgstr "SubMinder"
 
 #: src/Application.vala:273
 msgid "Average Expenses"
-msgstr ""
+msgstr "Ortalama Harcamalar"
 
 #: src/Application.vala:276
 msgid "Per Month"
-msgstr ""
+msgstr "Her Ay"
 
 #: src/Application.vala:288
 msgid "Add Subscription"
-msgstr ""
+msgstr "Abonelik Ekle"
 
 #: src/Application.vala:295
 msgid "Subscription List"
-msgstr ""
+msgstr "Abonelik Listesi"
 
 #: src/Application.vala:306 src/Application.vala:308
 #: src/DefaultCurrencyDialog.vala:42
 msgid "Set Default Currency"
-msgstr ""
+msgstr "Varsayılan Para Birimi"
 
 #: src/Application.vala:352
 msgid "Name:"
-msgstr ""
+msgstr "İsim:"
 
 #: src/Application.vala:353
 msgid "Description:"
-msgstr ""
+msgstr "Açıklama:"
 
 #: src/Application.vala:354
 msgid "First Billing Date:"
-msgstr ""
+msgstr "İlk Fatura Tarihi:"
 
 #: src/Application.vala:355
 msgid "Billing Cycle:"
-msgstr ""
+msgstr "Fatura Dönemi:"
 
 #: src/Application.vala:356
 msgid "Remind Me:"
-msgstr ""
+msgstr "Bana Hatırlat:"
 
 #: src/Application.vala:357
 msgid "Currency:"
-msgstr ""
+msgstr "Para Birimi:"
 
 #: src/Application.vala:358
 msgid "Cost:"
-msgstr ""
+msgstr "Maliyet:"
 
 #: src/Application.vala:552 src/Application.vala:568
 msgid "Days"
-msgstr ""
+msgstr "Günler"
 
 #: src/Application.vala:554 src/Application.vala:570
 msgid "Weeks"
-msgstr ""
+msgstr "Haftalar"
 
 #: src/Application.vala:556 src/Application.vala:572
 msgid "Months"
-msgstr ""
+msgstr "Aylar"
 
 #: src/Application.vala:558 src/Application.vala:574
 msgid "Years"
-msgstr ""
+msgstr "Yıllar"
 
 #: src/Application.vala:564
 msgid "Never"
-msgstr ""
+msgstr "Asla"
 
 #: src/Application.vala:566
 msgid "Same Day"
-msgstr ""
+msgstr "Aynı Gün"
 
 #: src/Application.vala:588
 msgid "Delete subscription"
-msgstr ""
+msgstr "Aboneliği Sil"
 
 #: src/Application.vala:721
 msgid "Cannot run without thread support.\n"
-msgstr ""
+msgstr "Konu desteği olmadan çalıştırılmaz"
 
 #: src/AddSubscriptionDialog.vala:40
 msgid "Create Subscription"
-msgstr ""
+msgstr "Abonelik Oluştur"
 
 #: src/AddSubscriptionDialog.vala:44
 msgid "Create"
-msgstr ""
+msgstr "Oluştur"
 
 #: src/AddSubscriptionDialog.vala:48
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 #: src/AddSubscriptionDialog.vala:81
 msgid "Other Subscription"
-msgstr ""
+msgstr "Diğer Abonelik"
 
 #: src/AddSubscriptionDialog.vala:86
 msgid "Template"
-msgstr ""
+msgstr "Şablon"
 
 #: src/AddSubscriptionDialog.vala:92
 msgid "Choose a subscription template"
-msgstr ""
+msgstr "Bir abonelik şablonu seçin"
 
 #: src/AddSubscriptionDialog.vala:95
 msgid ""
 "Got a suggestion? <a href=\"https://github.com/jeremyvaartjes/subminder/"
 "issues\">Post it here</a>."
-msgstr ""
+msgstr "Bir önerinizmi var? <a href=\"https://github.com/jeremyvaartjes/subminder/"
+"issues\">Buraya gönderin</a>."
 
 #: src/DefaultCurrencyDialog.vala:46
 msgid "Set Currency"
-msgstr ""
+msgstr "Para Birimini Ayarla"
 
 #: src/DefaultCurrencyDialog.vala:69
 msgid "Choose a default currency"
-msgstr ""
+msgstr "
+Varsayılan bir para birimi seçin"
 
 #: src/SMCurrency.vala:49
 msgid "Cannot load currency data"
-msgstr ""
+msgstr "Para birimi verileri yüklenemiyor"
 
 #: src/SMCurrency.vala:59
 msgid "Downloading updated currency data…\n"
-msgstr ""
+msgstr "Güncellenmiş para birimi verilerini indirme…"
 
 #: src/Subscription.vala:202
 msgid "Cannot load file: "
-msgstr ""
+msgstr "Dosya yüklenemiyor:"
