@@ -1,7 +1,7 @@
 # Turkish translations for extra package.
 # Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the extra package.
-# Automatically generated, 2019.
+# Safak Genisol, 2020.
 #
 msgid ""
 msgstr ""
@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-26 22:07+1100\n"
 "PO-Revision-Date: 2019-04-10 12:13+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"Last-Translator: Safak Genisol (@safak45x)\n"
+"Language-Team: Turkish\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,24 +20,24 @@ msgstr ""
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:3
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:7
 msgid "SubMinder"
-msgstr ""
+msgstr "SubMinder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:4
 msgid "Subscription Manager"
-msgstr ""
+msgstr "Abonelik Yöneticisi"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:5
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:8
 msgid "Keep tabs on your subscriptions"
-msgstr ""
+msgstr "Aboneliklerinizi takip edin"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:8
 msgid "com.github.jeremyvaartjes.subminder"
-msgstr ""
+msgstr "com.github.jeremyvaartjes.subminder"
 
 #: data/com.github.jeremyvaartjes.subminder.desktop.in:11
 msgid "Subscription;Manager;Sub;Minder;Money;Reminder;"
-msgstr ""
+msgstr "Abonelik;Yönetici;Yardımcı;Para;;Hatırlatma;"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:10
 msgid ""
@@ -46,6 +46,9 @@ msgid ""
 "notification with what subscription payment is coming up and how much it "
 "will cost."
 msgstr ""
+"SubMindir abone(ödemeleriniz) ne zaman yapılacağını takip etmenize yardımcı olur.Aboneleriniz"
+"için liste oluşturabilir ve ödeme günü yaklaştığında ve ne kadar ödeyeceğinize"
+"dair bir bildirim alrsınız."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:11
 msgid ""
@@ -55,60 +58,69 @@ msgid ""
 "will be converted to your currency so that you can have a better picture of "
 "what you pay."
 msgstr ""
+"SubMindir ayrıca ayda ortalama ne kadar ödeme yaptığınızıda"
+"belirler.Bütçenizi kontrol altında tutmak ve abone
+"ücretlerini daha iyi yönetmenize yardımcı olur."
+"Ayrıca abonelerinizin para birimi seçtiğiniz para birimine dönüşerek ödediğiniz ücreti daha iyi"
+"anlamamızı sağlar."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:30
-msgid "French translation update from @NathanBnm"
-msgstr ""
+msgid "French translation update from @NathanBnm."
+msgstr "Fransızca ceviri güncellemesi @NathanBnm. "
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:31
 msgid "Spanish translation from @fitojb"
-msgstr ""
+msgstr "İSpanyolca ceviri güncellemesi @fitojb"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:32
 msgid "Dutch translation from @Vistaus"
-msgstr ""
+msgstr "Flemenkçe ceviri güncellemesi @Vistaus "
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:33
 msgid "Icon now resembles gold coin"
-msgstr ""
+msgstr "Uygulama ikonu simdi altın madeni paraya benziyor"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:40
 msgid "French translation from @NathanBnm."
-msgstr ""
+msgstr "Fransızca ceviri @NathanBnm"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:41
 msgid "Tooltips added to header bar by @NathanBnm."
-msgstr ""
+msgstr "başlık çubuğuna araç ipuçları eklendi @NathanBnm"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:42
 msgid ""
 "The app now shows the proper currency symbol instead of a dollar symbol."
-msgstr ""
+msgstr "Uygulama artık bir dolar simgesi yerine uygun para birimi simgesini gösteriyor."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:43
 msgid ""
 "You will now see both the currency of the subscription and the converted "
 "value for each subscription."
 msgstr ""
+"Artık hem aboneliğin para birimini hem de her abonelik için dönüştürülen "
+"değeri göreceksiniz."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:44
 msgid ""
 "The add subscription window now has a search field and items in the list are "
 "sorted."
 msgstr ""
+"Abonelik ekle penceresinde artık bir arama alanı var ve listedeki öğeler" 
+"sıralanıyor"
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:51
 msgid "Fixed issue with spin buttons not updating properly."
-msgstr ""
+msgstr "Fixed issue with spin buttons not updating properly."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:52
 msgid "Created a proper app description."
-msgstr ""
+msgstr "Uygun bir uygulama açıklaması oluşturuldu."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:59
 msgid "Initial Release."
-msgstr ""
+msgstr "İlk Sürüm."
 
 #: data/com.github.jeremyvaartjes.subminder.appdata.xml.in:95
 msgid "Jeremy Vaartjes"
-msgstr ""
+msgstr "Jeremy Vaartjes"
