@@ -59,7 +59,7 @@ msgid ""
 "what you pay."
 msgstr ""
 "SubMindir ayrıca ayda ortalama ne kadar ödeme yaptığınızıda"
-"belirler.Bütçenizi kontrol altında tutmak ve abone
+"belirler.Bütçenizi kontrol altında tutmak ve abone"
 "ücretlerini daha iyi yönetmenize yardımcı olur."
 "Ayrıca abonelerinizin para birimi seçtiğiniz para birimine dönüşerek ödediğiniz ücreti daha iyi"
 "anlamamızı sağlar."
