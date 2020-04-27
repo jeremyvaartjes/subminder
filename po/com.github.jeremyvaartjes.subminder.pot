@@ -151,8 +151,7 @@ msgstr "Para Birimini Ayarla"
 
 #: src/DefaultCurrencyDialog.vala:69
 msgid "Choose a default currency"
-msgstr "
-Varsayılan bir para birimi seçin"
+msgstr "Varsayılan bir para birimi seçin"
 
 #: src/SMCurrency.vala:49
 msgid "Cannot load currency data"
