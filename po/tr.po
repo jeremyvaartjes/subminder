@@ -112,7 +112,7 @@ msgstr "Aboneliği Sil"
 
 #: src/Application.vala:721
 msgid "Cannot run without thread support.\n"
-msgstr "Konu desteği olmadan çalıştırılmaz"
+msgstr "Konu desteği olmadan çalıştırılmaz\n"
 
 #: src/AddSubscriptionDialog.vala:40
 msgid "Create Subscription"
@@ -159,7 +159,7 @@ msgstr "Para birimi verileri yüklenemiyor"
 
 #: src/SMCurrency.vala:59
 msgid "Downloading updated currency data…\n"
-msgstr "Güncellenmiş para birimi verilerini indirme…"
+msgstr "Güncellenmiş para birimi verilerini indirme…\n"
 
 #: src/Subscription.vala:202
 msgid "Cannot load file: "
