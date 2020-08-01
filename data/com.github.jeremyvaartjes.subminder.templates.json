@@ -286,6 +286,19 @@
 		{ "name": "Blinkist" },
 		{ "name": "Mijndomein" },
 		{ "name": "Nintendo Switch Online" },
-		{ "name": "Liberapay" }
+		{ "name": "Liberapay" },
+		{ "name": "Turk Telekom" },
+		{ "name": "CK Bogazici Elektrik" },
+		{ "name": "Igdas Istanbul" },
+		{ "name": "Iski" },
+		{ "name": "TurkNet" },
+		{ "name": "Turkcell" },
+		{ "name": "Turkcell SuperOnline" },
+		{ "name": "Istanbul Kart" },
+		{ "name": "Millenicom" },
+		{ "name": "Turksat Kablo" },
+		{ "name": "Bimcell" },
+		{ "name": "Dicle Elektrik" },
+		{ "name": "Teknoseyir Plus" }
 	]
 }
