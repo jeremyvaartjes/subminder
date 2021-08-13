@@ -116,7 +116,7 @@ public class SMCurrency {
             }
 
             Soup.Session session = new Soup.Session ();
-            Soup.Request request = session.request ("https://jeremy.vaartj.es/currency.json");
+            Soup.Request request = session.request ("https://subminderdata.s3.ap-southeast-2.amazonaws.com/currency.json");
             InputStream stream = request.send ();
             DataInputStream data_stream = new DataInputStream (stream);
             string? line;
@@ -124,7 +124,7 @@ public class SMCurrency {
             while ((line = data_stream.read_line ()) != null) {
                 cDat += line + "\n";
             }
-            request = session.request ("https://jeremy.vaartj.es/availablecurrencies_v2.json");
+            request = session.request ("https://subminderdata.s3.ap-southeast-2.amazonaws.com/availablecurrencies.json");
             stream = request.send ();
             data_stream = new DataInputStream (stream);
             string acDat = "";
